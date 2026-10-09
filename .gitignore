@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated experiment data
+results/
+analysis/
+*.npy
+*.npz
