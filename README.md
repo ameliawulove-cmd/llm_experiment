@@ -171,9 +171,3 @@ Run is resumable if interrupted. Completed episodes are detected automatically.
 ## Claim Boundary
 
 This project studies inference-time, in-context computation only. Model weights are never updated. A decodable direction in activations is evidence that information is present, not that it is causally used. These results do not claim LLMs learn like biological agents or use dopamine-like mechanisms.
-
----
-
-## Author
-
-Muxuan Wu — graduate research, reward prediction error representations in large language models.
