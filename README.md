@@ -33,6 +33,8 @@ Episode end: reflections = []
 
 ## Results — Qwen3-0.6B (Phase 1 complete)
 
+### Qwen3-0.6B — 50 episodes × 30 trials
+
 | Metric | Value | Threshold | Pass |
 |--------|-------|-----------|------|
 | RPE–update correlation (excl. trial 1) | 0.019 | ≥ 0.30 | ✗ |
@@ -41,37 +43,64 @@ Episode end: reflections = []
 | Mean update after negative RPE | +0.00119 | < 0 | ✗ |
 | **Gate passed** | **No** | | |
 
-**Choice collapse:** 84.2% arm B regardless of reward contingency (B-collapse).
-
-**Reversal adaptation:**
-
 | Phase | Optimal accuracy | A-choice rate |
 |-------|-----------------|---------------|
 | Pre-reversal | 54.5% | 23.5% |
 | Post-reversal | 46.5% | 8.0% |
 
-No adaptation after reversal. Optimal accuracy dropped 8 pp; the model continued choosing B after B's reward probability fell to 0.20.
+Choice collapse: 84.2% B. No reversal adaptation.
 
-**Verbalization–behaviour gap — key finding:**
+---
 
-The model generates correct verbal diagnoses but does not act on them:
+### Qwen3-1.7B — 20 episodes × 20 trials
+
+| Metric | Value | Threshold | Pass |
+|--------|-------|-----------|------|
+| RPE–update correlation (excl. trial 1) | 0.102 | ≥ 0.30 | ✗ |
+| Signed update accuracy (excl. trial 1) | 51.8% | ≥ 60% | ✗ |
+| Mean update after positive RPE | +0.0023 | > 0 | ✓ |
+| Mean update after negative RPE | −0.0025 | < 0 | ✓ |
+| **Gate passed** | **No** | | |
+
+| Phase | Optimal accuracy | A-choice rate |
+|-------|-----------------|---------------|
+| Pre-reversal | 57.9% | 13.4% |
+| Post-reversal | 37.9% | 5.6% |
+
+Choice collapse: 90.5% B — stronger than 0.6B. Reversal adaptation absent; post-reversal accuracy (37.9%) falls below chance.
+
+---
+
+### Cross-model comparison
+
+| | Qwen3-0.6B | Qwen3-1.7B |
+|-|-----------|-----------|
+| Scale | 50×30 | 20×20 |
+| B-collapse | 84.2% | 90.5% |
+| RPE–update corr (excl. T1) | 0.019 | 0.102 |
+| Negative RPE → negative update | ✗ | ✓ |
+| Post-reversal optimal accuracy | 46.5% | 37.9% |
+| Gate passed | No | No |
+
+1.7B shows marginal improvement in value-update directionality (RPE–update correlation higher; negative RPE updates now go in the correct direction) but produces a stronger B-collapse and worse post-reversal adaptation.
+
+---
+
+### Verbalization–behaviour gap
+
+Both models generate correct verbal diagnoses that are not reflected in subsequent choices:
 
 ```
-Trial 16  POST  B chosen  reward=0
-  Reflection: "B is negative, indicating it is less valuable than option A."
+# Qwen3-0.6B — trials 16–18 (post-reversal)
+Reflection: "B is negative, indicating it is less valuable than option A."
+Next choice: B
 
-Trial 17  POST  B chosen  reward=0
-  Reflection: "B is negative, indicating it is less valuable than option A."
-
-Trial 18  POST  B chosen  reward=0
-  Reflection: "B is negative, indicating it is less valuable than option A."
+# Qwen3-1.7B — trial 11 (pre-reversal)
+Reflection: "choosing B may not be the optimal strategy in this particular trial."
+Next choice: B
 ```
 
-Four consecutive trials where the model writes "switch to A" and immediately chooses B.
-
-**Why B-collapse:** The reflection memory grows to ~29 entries by trial 30 (~1740 tokens), almost all discussing B outcomes. This B-focused text shifts the model's choice logit toward B — a self-reinforcing loop that choice-prior calibration cannot remove because calibration only subtracts a static no-history baseline.
-
-**Qwen3-1.7B:** run in progress (~100–120 hours on Apple M4 MPS).
+**Why B-collapse:** The reflection memory accumulates B-focused text (because B is already being chosen), creating a self-reinforcing loop. Choice-prior calibration removes the static positional A-token bias but cannot cancel in-context B-language introduced dynamically by the model's own reflections.
 
 ---
 
