@@ -104,6 +104,79 @@ Next choice: B
 
 ---
 
+## Prompts
+
+### Choice prompt — Exp 4 baseline (no reflection)
+
+The model sees the task instruction, the full trial history, and is asked to choose:
+
+```
+You are playing a repeated two-armed reward task. Reward tendencies can change.
+Infer each option's current value from the observed history.
+
+History (trial option outcome):
+01 B 1
+02 B 0
+03 A 1
+...
+
+NEXT_CHOICE (A/B):
+```
+
+The model outputs a single token: `A` or `B`.
+
+---
+
+### Choice prompt — Exp 5 (with reflection memory)
+
+Identical to Exp 4 except for the `Previous reflections:` block inserted before `NEXT_CHOICE`:
+
+```
+You are playing a repeated two-armed reward task. Reward tendencies can change.
+Infer each option's current value from the observed history.
+
+History (trial option outcome):
+01 B 1
+02 B 0
+03 A 1
+...
+
+Previous reflections:
+[1] This outcome suggests that B is more valuable than A...
+[2] B has consistently yielded positive rewards, suggesting B is more valuable...
+[3] The reward value for B is currently higher than A...
+...
+
+NEXT_CHOICE (A/B):
+```
+
+At trial 1 the reflections block is empty (identical to Exp 4). By trial 30 it contains ~29 entries (~1740 tokens).
+
+---
+
+### Reflection prompt — Exp 5 (generated after each trial)
+
+After the reward is observed, the same model generates a free-text reflection:
+
+```
+You are playing a repeated two-armed reward task. Reward tendencies can change.
+Infer each option's current value from the observed history.
+
+Trial history so far:
+01 B 1
+02 B 0
+03 A 1
+...
+
+You chose B and received a reward of 0.
+Briefly reflect on what, if anything, this outcome suggests for your next decision.
+REFLECTION:
+```
+
+The generated text is appended to `reflection_memory` and appears as entry `[N]` in the next trial's choice prompt. Memory resets at each episode boundary.
+
+---
+
 ## Repository
 
 ```
