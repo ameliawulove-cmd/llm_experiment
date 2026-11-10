@@ -1,0 +1,4700 @@
+[
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "reward_history",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "recent_reward",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "delta_q",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "rpe_proxy",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "choice_tendency",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "post_reversal",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "rw_delta_q",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "rw_rpe",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 0,
+    "target": "rw_q_chosen",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "reward_history",
+    "r_test": 0.19264456821865847
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "recent_reward",
+    "r_test": 0.07123015478364803
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "delta_q",
+    "r_test": 0.4031733492473014
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "rpe_proxy",
+    "r_test": -0.11366235260819554
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "choice_tendency",
+    "r_test": 0.2667145162142012
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "post_reversal",
+    "r_test": 0.07368094752276406
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "rw_delta_q",
+    "r_test": -0.1665393032108089
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "rw_rpe",
+    "r_test": -0.04321105617520992
+  },
+  {
+    "position": "declare_a",
+    "layer": 1,
+    "target": "rw_q_chosen",
+    "r_test": 0.013556630064667351
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "reward_history",
+    "r_test": 0.4177568269427572
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "recent_reward",
+    "r_test": 0.2682238383558362
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "delta_q",
+    "r_test": 0.40369470505855043
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "rpe_proxy",
+    "r_test": 0.019626761474361615
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "choice_tendency",
+    "r_test": 0.2008789491741458
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "post_reversal",
+    "r_test": 0.05735176059707775
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "rw_delta_q",
+    "r_test": 0.023944960093892964
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "rw_rpe",
+    "r_test": -0.03136952618930312
+  },
+  {
+    "position": "declare_a",
+    "layer": 2,
+    "target": "rw_q_chosen",
+    "r_test": 0.0037222397003287616
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "reward_history",
+    "r_test": 0.768152614262654
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "recent_reward",
+    "r_test": 0.755165261700618
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "delta_q",
+    "r_test": -0.158735109565776
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "rpe_proxy",
+    "r_test": -0.08550621212825238
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "choice_tendency",
+    "r_test": 0.04850231741159035
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "post_reversal",
+    "r_test": 0.039963547541652183
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "rw_delta_q",
+    "r_test": 0.2494045535940896
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "rw_rpe",
+    "r_test": -0.016092357634050803
+  },
+  {
+    "position": "declare_a",
+    "layer": 3,
+    "target": "rw_q_chosen",
+    "r_test": -0.06972251434849727
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "reward_history",
+    "r_test": 0.9352943982736782
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "recent_reward",
+    "r_test": 0.7802053692697584
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "delta_q",
+    "r_test": -0.03658962557769618
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "rpe_proxy",
+    "r_test": -0.04526366451701687
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "choice_tendency",
+    "r_test": -0.06685399975060179
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "post_reversal",
+    "r_test": 0.08464059675097693
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "rw_delta_q",
+    "r_test": 0.11984248153236503
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "rw_rpe",
+    "r_test": -0.05130819841624056
+  },
+  {
+    "position": "declare_a",
+    "layer": 4,
+    "target": "rw_q_chosen",
+    "r_test": 0.043985871656899475
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "reward_history",
+    "r_test": 0.9312287481875874
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "recent_reward",
+    "r_test": 0.769537821626406
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "delta_q",
+    "r_test": 0.22263242156199406
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "rpe_proxy",
+    "r_test": -0.01117005226214461
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "choice_tendency",
+    "r_test": -0.06696046999149026
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "post_reversal",
+    "r_test": 0.06855682087580237
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "rw_delta_q",
+    "r_test": 0.32441479105235316
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "rw_rpe",
+    "r_test": -0.04147112851984186
+  },
+  {
+    "position": "declare_a",
+    "layer": 5,
+    "target": "rw_q_chosen",
+    "r_test": 0.04340004184836631
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "reward_history",
+    "r_test": 0.8954915833741238
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "recent_reward",
+    "r_test": 0.5934521277836572
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "delta_q",
+    "r_test": 0.03247257940446077
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "rpe_proxy",
+    "r_test": 0.050172538140245235
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "choice_tendency",
+    "r_test": -0.20478468804770453
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "post_reversal",
+    "r_test": 0.032790578114894144
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "rw_delta_q",
+    "r_test": -0.12590026026262874
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "rw_rpe",
+    "r_test": -0.010536732497107062
+  },
+  {
+    "position": "declare_a",
+    "layer": 6,
+    "target": "rw_q_chosen",
+    "r_test": 0.1746332877939458
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "reward_history",
+    "r_test": 0.9461970574074227
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "recent_reward",
+    "r_test": 0.7257319147701033
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "delta_q",
+    "r_test": 0.40876081443218865
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "rpe_proxy",
+    "r_test": -0.10957423294064626
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "choice_tendency",
+    "r_test": -0.09577821852259472
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "post_reversal",
+    "r_test": 0.19288236510667497
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "rw_delta_q",
+    "r_test": -0.0445309861847246
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "rw_rpe",
+    "r_test": -0.018453288681750432
+  },
+  {
+    "position": "declare_a",
+    "layer": 7,
+    "target": "rw_q_chosen",
+    "r_test": 0.07729047667987052
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "reward_history",
+    "r_test": 0.8918076052807
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "recent_reward",
+    "r_test": 0.7497840644353859
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "delta_q",
+    "r_test": 0.18485409517636725
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "rpe_proxy",
+    "r_test": -0.046866403563831115
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "choice_tendency",
+    "r_test": 0.13028906336033955
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "post_reversal",
+    "r_test": 0.09986569746410598
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "rw_delta_q",
+    "r_test": 0.1722070772132687
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "rw_rpe",
+    "r_test": 0.06737455939031996
+  },
+  {
+    "position": "declare_a",
+    "layer": 8,
+    "target": "rw_q_chosen",
+    "r_test": -0.05745344448202737
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "reward_history",
+    "r_test": 0.9128015576538956
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "recent_reward",
+    "r_test": 0.6734027623276415
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "delta_q",
+    "r_test": 0.19387129711985013
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "rpe_proxy",
+    "r_test": -0.12834315070005684
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "choice_tendency",
+    "r_test": 0.010557660579377392
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "post_reversal",
+    "r_test": 0.20511182251541887
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "rw_delta_q",
+    "r_test": 0.22355774949047943
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "rw_rpe",
+    "r_test": -0.03723940821195858
+  },
+  {
+    "position": "declare_a",
+    "layer": 9,
+    "target": "rw_q_chosen",
+    "r_test": -0.025003165611030196
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "reward_history",
+    "r_test": 0.8685630251491003
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "recent_reward",
+    "r_test": 0.6386155681306834
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "delta_q",
+    "r_test": 0.25668030041584056
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "rpe_proxy",
+    "r_test": 0.0005303174467236199
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "choice_tendency",
+    "r_test": 0.416230420324242
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "post_reversal",
+    "r_test": 0.14098032797144763
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "rw_delta_q",
+    "r_test": 0.11136808219487711
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "rw_rpe",
+    "r_test": -0.018843003973515373
+  },
+  {
+    "position": "declare_a",
+    "layer": 10,
+    "target": "rw_q_chosen",
+    "r_test": -0.11738783744223519
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "reward_history",
+    "r_test": 0.8627459679677013
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "recent_reward",
+    "r_test": 0.4097024995808171
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "delta_q",
+    "r_test": 0.4622865903475135
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "rpe_proxy",
+    "r_test": -0.10101991366909605
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "choice_tendency",
+    "r_test": 0.2035313264782718
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "post_reversal",
+    "r_test": 0.19879885425803936
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "rw_delta_q",
+    "r_test": 0.09957863273649838
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "rw_rpe",
+    "r_test": -0.04319930339779789
+  },
+  {
+    "position": "declare_a",
+    "layer": 11,
+    "target": "rw_q_chosen",
+    "r_test": 0.0557288295757775
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "reward_history",
+    "r_test": 0.7215841566932343
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "recent_reward",
+    "r_test": 0.5823074693921141
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "delta_q",
+    "r_test": 0.40235255487091115
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "rpe_proxy",
+    "r_test": -0.019841867055538514
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "choice_tendency",
+    "r_test": 0.3884628749973932
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "post_reversal",
+    "r_test": 0.005785510066104006
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "rw_delta_q",
+    "r_test": 0.14990546976460442
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "rw_rpe",
+    "r_test": -0.002559328277053137
+  },
+  {
+    "position": "declare_a",
+    "layer": 12,
+    "target": "rw_q_chosen",
+    "r_test": 0.004022634157423084
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "reward_history",
+    "r_test": 0.7710505685211007
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "recent_reward",
+    "r_test": 0.33651768505215574
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "delta_q",
+    "r_test": 0.44779448772116776
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "rpe_proxy",
+    "r_test": -0.023414502589573543
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "choice_tendency",
+    "r_test": 0.33917975123627664
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "post_reversal",
+    "r_test": 0.25497417030492187
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "rw_delta_q",
+    "r_test": 0.23787993102628763
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "rw_rpe",
+    "r_test": 0.04315961387471623
+  },
+  {
+    "position": "declare_a",
+    "layer": 13,
+    "target": "rw_q_chosen",
+    "r_test": 0.11718282965224161
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "reward_history",
+    "r_test": 0.5563400712322306
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "recent_reward",
+    "r_test": 0.3659448085087927
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "delta_q",
+    "r_test": 0.6720778045893929
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "rpe_proxy",
+    "r_test": -0.038809840898298614
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "choice_tendency",
+    "r_test": 0.33484011786246354
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "post_reversal",
+    "r_test": 0.30957642988041534
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "rw_delta_q",
+    "r_test": 0.28950012135827574
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "rw_rpe",
+    "r_test": -0.03841993765764612
+  },
+  {
+    "position": "declare_a",
+    "layer": 14,
+    "target": "rw_q_chosen",
+    "r_test": -0.060934896358103056
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "reward_history",
+    "r_test": 0.6778787975306295
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "recent_reward",
+    "r_test": 0.36481601003010217
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "delta_q",
+    "r_test": 0.5788715974908355
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "rpe_proxy",
+    "r_test": -0.013832190690586966
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "choice_tendency",
+    "r_test": 0.5557629122410399
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "post_reversal",
+    "r_test": 0.3471558878912378
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "rw_delta_q",
+    "r_test": 0.13514658937248272
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "rw_rpe",
+    "r_test": 0.01360383433379336
+  },
+  {
+    "position": "declare_a",
+    "layer": 15,
+    "target": "rw_q_chosen",
+    "r_test": -0.07470955588347782
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "reward_history",
+    "r_test": 0.6901847679403986
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "recent_reward",
+    "r_test": 0.36872439185634215
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "delta_q",
+    "r_test": -0.009221457702574107
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "rpe_proxy",
+    "r_test": 0.08946550535966248
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "choice_tendency",
+    "r_test": 0.4005704749177148
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "post_reversal",
+    "r_test": 0.2236775276699511
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "rw_delta_q",
+    "r_test": 0.09180988988453542
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "rw_rpe",
+    "r_test": 0.052982012520081584
+  },
+  {
+    "position": "declare_a",
+    "layer": 16,
+    "target": "rw_q_chosen",
+    "r_test": -0.07210527448958565
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "reward_history",
+    "r_test": 0.6315005082777935
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "recent_reward",
+    "r_test": 0.1539097406722557
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "delta_q",
+    "r_test": 0.318112883779029
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "rpe_proxy",
+    "r_test": 0.00655220788667544
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "choice_tendency",
+    "r_test": 0.1564622333551719
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "post_reversal",
+    "r_test": 0.4474162553130185
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "rw_delta_q",
+    "r_test": -0.20492002226134962
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "rw_rpe",
+    "r_test": 0.04462377001618559
+  },
+  {
+    "position": "declare_a",
+    "layer": 17,
+    "target": "rw_q_chosen",
+    "r_test": -0.019080981109471866
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "reward_history",
+    "r_test": 0.6420509339770294
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "recent_reward",
+    "r_test": 0.152150468963245
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "delta_q",
+    "r_test": 0.4770530618853471
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "rpe_proxy",
+    "r_test": -0.023515720587625865
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "choice_tendency",
+    "r_test": 0.184202011012438
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "post_reversal",
+    "r_test": 0.2221397161010435
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "rw_delta_q",
+    "r_test": -0.08011026206144056
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "rw_rpe",
+    "r_test": 0.09699159103574563
+  },
+  {
+    "position": "declare_a",
+    "layer": 18,
+    "target": "rw_q_chosen",
+    "r_test": -0.05421222331041079
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "reward_history",
+    "r_test": 0.5405266140850994
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "recent_reward",
+    "r_test": 0.35555997922437654
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "delta_q",
+    "r_test": -0.022652947316538958
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "rpe_proxy",
+    "r_test": -0.059090843160012736
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "choice_tendency",
+    "r_test": 0.32432807196607577
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "post_reversal",
+    "r_test": 0.3273880008080066
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "rw_delta_q",
+    "r_test": 0.016004888023434992
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "rw_rpe",
+    "r_test": -0.018968797721873404
+  },
+  {
+    "position": "declare_a",
+    "layer": 19,
+    "target": "rw_q_chosen",
+    "r_test": -0.03508834544595511
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "reward_history",
+    "r_test": 0.6417783913167726
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "recent_reward",
+    "r_test": 0.2355287393939418
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "delta_q",
+    "r_test": 0.1265330871088199
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "rpe_proxy",
+    "r_test": 0.12852114891530736
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "choice_tendency",
+    "r_test": 0.3018980240727353
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "post_reversal",
+    "r_test": 0.22134198805546978
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "rw_delta_q",
+    "r_test": -0.0572849471581252
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "rw_rpe",
+    "r_test": 0.06766893495474434
+  },
+  {
+    "position": "declare_a",
+    "layer": 20,
+    "target": "rw_q_chosen",
+    "r_test": 0.06524344708320098
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "reward_history",
+    "r_test": 0.5243437053346355
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "recent_reward",
+    "r_test": 0.2893895707991122
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "delta_q",
+    "r_test": 0.2556830202894237
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "rpe_proxy",
+    "r_test": -0.12528431644404012
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "choice_tendency",
+    "r_test": 0.20669582056427993
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "post_reversal",
+    "r_test": 0.1762723510049217
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "rw_delta_q",
+    "r_test": 0.11644800101684027
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "rw_rpe",
+    "r_test": -0.030832130170090913
+  },
+  {
+    "position": "declare_a",
+    "layer": 21,
+    "target": "rw_q_chosen",
+    "r_test": -0.016002325966030302
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "reward_history",
+    "r_test": 0.5418724535285044
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "recent_reward",
+    "r_test": 0.2896714838087244
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "delta_q",
+    "r_test": 0.2138206580434241
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "rpe_proxy",
+    "r_test": -0.06493686369740025
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "choice_tendency",
+    "r_test": 0.34724677199789716
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "post_reversal",
+    "r_test": 0.2221163095617415
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "rw_delta_q",
+    "r_test": -0.03927073187841226
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "rw_rpe",
+    "r_test": -0.0001106482724776874
+  },
+  {
+    "position": "declare_a",
+    "layer": 22,
+    "target": "rw_q_chosen",
+    "r_test": -0.07531750736863078
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "reward_history",
+    "r_test": 0.46915999516151713
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "recent_reward",
+    "r_test": 0.34066622341497776
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "delta_q",
+    "r_test": 0.5290740710283411
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "rpe_proxy",
+    "r_test": 0.13116954103105333
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "choice_tendency",
+    "r_test": 0.45050939318927374
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "post_reversal",
+    "r_test": 0.18030065749486834
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "rw_delta_q",
+    "r_test": -0.021054166770408785
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "rw_rpe",
+    "r_test": 0.07454339035187994
+  },
+  {
+    "position": "declare_a",
+    "layer": 23,
+    "target": "rw_q_chosen",
+    "r_test": -0.09776913689669203
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "reward_history",
+    "r_test": 0.4999121184294836
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "recent_reward",
+    "r_test": 0.20060999482882808
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "delta_q",
+    "r_test": 0.1734607483280729
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "rpe_proxy",
+    "r_test": -0.03692807255942082
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "choice_tendency",
+    "r_test": 0.09462426898804847
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "post_reversal",
+    "r_test": 0.50080936622661
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "rw_delta_q",
+    "r_test": -0.11786902764504627
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "rw_rpe",
+    "r_test": -0.002297313866809281
+  },
+  {
+    "position": "declare_a",
+    "layer": 24,
+    "target": "rw_q_chosen",
+    "r_test": 0.10630445715633545
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "reward_history",
+    "r_test": 0.6419946799002368
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "recent_reward",
+    "r_test": 0.3862628516153531
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "delta_q",
+    "r_test": 0.22388108300205134
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "rpe_proxy",
+    "r_test": 0.1047823479734165
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "choice_tendency",
+    "r_test": 0.19236891544922927
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "post_reversal",
+    "r_test": 0.11683397538522203
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "rw_delta_q",
+    "r_test": 0.014433543651613413
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "rw_rpe",
+    "r_test": 0.018757436358074635
+  },
+  {
+    "position": "declare_a",
+    "layer": 25,
+    "target": "rw_q_chosen",
+    "r_test": 0.1804023008267121
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "reward_history",
+    "r_test": 0.6810832282134425
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "recent_reward",
+    "r_test": 0.3931316460405846
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "delta_q",
+    "r_test": 0.33097791406520755
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "rpe_proxy",
+    "r_test": -0.051671271250891625
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "choice_tendency",
+    "r_test": 0.4968612250282389
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "post_reversal",
+    "r_test": 0.15313520322326907
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "rw_delta_q",
+    "r_test": -0.03215285559109129
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "rw_rpe",
+    "r_test": 0.02513098759196628
+  },
+  {
+    "position": "declare_a",
+    "layer": 26,
+    "target": "rw_q_chosen",
+    "r_test": -0.18117369294357388
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "reward_history",
+    "r_test": 0.43924308720502037
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "recent_reward",
+    "r_test": 0.36256732179696266
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "delta_q",
+    "r_test": 0.11145588585950633
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "rpe_proxy",
+    "r_test": 0.11092057426639003
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "choice_tendency",
+    "r_test": 0.3623006350391394
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "post_reversal",
+    "r_test": 0.29718584822025657
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "rw_delta_q",
+    "r_test": -0.19348076320804097
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "rw_rpe",
+    "r_test": 0.07826934838764363
+  },
+  {
+    "position": "declare_a",
+    "layer": 27,
+    "target": "rw_q_chosen",
+    "r_test": 0.0856612578543435
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "reward_history",
+    "r_test": 0.6201113735457467
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "recent_reward",
+    "r_test": 0.1465107067062452
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "delta_q",
+    "r_test": 0.0829066936456844
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "rpe_proxy",
+    "r_test": -0.019167929007285464
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "choice_tendency",
+    "r_test": 0.3024186606903171
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "post_reversal",
+    "r_test": 0.2723946995975424
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "rw_delta_q",
+    "r_test": -0.11023970985524392
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "rw_rpe",
+    "r_test": -0.0524874127084829
+  },
+  {
+    "position": "declare_a",
+    "layer": 28,
+    "target": "rw_q_chosen",
+    "r_test": 0.21458352388287363
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "reward_history",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "recent_reward",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "delta_q",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "rpe_proxy",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "choice_tendency",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "post_reversal",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "rw_delta_q",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "rw_rpe",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 0,
+    "target": "rw_q_chosen",
+    "r_test": NaN
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "reward_history",
+    "r_test": 0.3461172675826355
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "recent_reward",
+    "r_test": 0.2514787422667004
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "delta_q",
+    "r_test": 0.3272102811433619
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "rpe_proxy",
+    "r_test": 0.025209607385763826
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "choice_tendency",
+    "r_test": 0.07294231302378093
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "post_reversal",
+    "r_test": 0.00517508642712222
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "rw_delta_q",
+    "r_test": 0.06690675731153582
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "rw_rpe",
+    "r_test": 0.05719222166475631
+  },
+  {
+    "position": "declare_b",
+    "layer": 1,
+    "target": "rw_q_chosen",
+    "r_test": 0.015255729490575317
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "reward_history",
+    "r_test": 0.5817798503388742
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "recent_reward",
+    "r_test": 0.6471467514846974
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "delta_q",
+    "r_test": 0.4397540098793207
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "rpe_proxy",
+    "r_test": 0.19113216257535964
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "choice_tendency",
+    "r_test": -0.18042036463002772
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "post_reversal",
+    "r_test": 0.04022733059640435
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "rw_delta_q",
+    "r_test": -0.06323352436258291
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "rw_rpe",
+    "r_test": 0.06057914842882259
+  },
+  {
+    "position": "declare_b",
+    "layer": 2,
+    "target": "rw_q_chosen",
+    "r_test": 0.030491101046855578
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "reward_history",
+    "r_test": 0.8816593098679877
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "recent_reward",
+    "r_test": 0.7917774518679164
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "delta_q",
+    "r_test": -0.3095717823713591
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "rpe_proxy",
+    "r_test": -0.15168395493298653
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "choice_tendency",
+    "r_test": 0.01300035232408572
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "post_reversal",
+    "r_test": 0.09660853122535026
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "rw_delta_q",
+    "r_test": -0.04832301572973668
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "rw_rpe",
+    "r_test": -0.06007813295724994
+  },
+  {
+    "position": "declare_b",
+    "layer": 3,
+    "target": "rw_q_chosen",
+    "r_test": 0.07059753636967306
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "reward_history",
+    "r_test": 0.9201231212084938
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "recent_reward",
+    "r_test": 0.8234307627710277
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "delta_q",
+    "r_test": 0.13739751238008704
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "rpe_proxy",
+    "r_test": 0.028621069587445976
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "choice_tendency",
+    "r_test": 0.10250254975970359
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "post_reversal",
+    "r_test": 0.07887390793609167
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "rw_delta_q",
+    "r_test": -0.13472236134902843
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "rw_rpe",
+    "r_test": 0.009600565564461054
+  },
+  {
+    "position": "declare_b",
+    "layer": 4,
+    "target": "rw_q_chosen",
+    "r_test": 0.06054697779850718
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "reward_history",
+    "r_test": 0.9270634193299373
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "recent_reward",
+    "r_test": 0.8214162393729816
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "delta_q",
+    "r_test": 0.015482278999559644
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "rpe_proxy",
+    "r_test": -0.011594347957376657
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "choice_tendency",
+    "r_test": 0.3257664803199392
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "post_reversal",
+    "r_test": 0.097361964782909
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "rw_delta_q",
+    "r_test": 0.07057548029063605
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "rw_rpe",
+    "r_test": 0.03704938140307623
+  },
+  {
+    "position": "declare_b",
+    "layer": 5,
+    "target": "rw_q_chosen",
+    "r_test": 0.09892277523293608
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "reward_history",
+    "r_test": 0.9034642650522378
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "recent_reward",
+    "r_test": 0.5806295909307242
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "delta_q",
+    "r_test": 0.2497808399588539
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "rpe_proxy",
+    "r_test": 0.11085119630451014
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "choice_tendency",
+    "r_test": -0.0608100762634609
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "post_reversal",
+    "r_test": 0.36960555319910254
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "rw_delta_q",
+    "r_test": 0.04040401749524981
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "rw_rpe",
+    "r_test": 0.056766133694677666
+  },
+  {
+    "position": "declare_b",
+    "layer": 6,
+    "target": "rw_q_chosen",
+    "r_test": 0.044868302380290666
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "reward_history",
+    "r_test": 0.9112031421612554
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "recent_reward",
+    "r_test": 0.8288809862988937
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "delta_q",
+    "r_test": 0.06782213235750074
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "rpe_proxy",
+    "r_test": -0.06267150868484016
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "choice_tendency",
+    "r_test": 0.32955507139015583
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "post_reversal",
+    "r_test": 0.23224593109778735
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "rw_delta_q",
+    "r_test": -0.08887545919447029
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "rw_rpe",
+    "r_test": 0.07343007243797338
+  },
+  {
+    "position": "declare_b",
+    "layer": 7,
+    "target": "rw_q_chosen",
+    "r_test": 0.03568492511856917
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "reward_history",
+    "r_test": 0.9181224447568533
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "recent_reward",
+    "r_test": 0.5540430894702278
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "delta_q",
+    "r_test": 0.20037250180585345
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "rpe_proxy",
+    "r_test": -0.03800657243334751
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "choice_tendency",
+    "r_test": 0.1957439239861308
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "post_reversal",
+    "r_test": 0.16652832652593683
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "rw_delta_q",
+    "r_test": 0.07954147333972666
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "rw_rpe",
+    "r_test": 0.04464094162841275
+  },
+  {
+    "position": "declare_b",
+    "layer": 8,
+    "target": "rw_q_chosen",
+    "r_test": 0.07850518565055187
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "reward_history",
+    "r_test": 0.8733660303924671
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "recent_reward",
+    "r_test": 0.6002040563684751
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "delta_q",
+    "r_test": 0.39491378187575427
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "rpe_proxy",
+    "r_test": 0.02141643715470183
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "choice_tendency",
+    "r_test": 0.38309165528120503
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "post_reversal",
+    "r_test": 0.24090925311119435
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "rw_delta_q",
+    "r_test": 0.2372738143873879
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "rw_rpe",
+    "r_test": 0.047331993722629244
+  },
+  {
+    "position": "declare_b",
+    "layer": 9,
+    "target": "rw_q_chosen",
+    "r_test": -0.16423590439974722
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "reward_history",
+    "r_test": 0.7240648947158098
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "recent_reward",
+    "r_test": 0.33400712507126995
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "delta_q",
+    "r_test": 0.33082741247448655
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "rpe_proxy",
+    "r_test": 0.02380803927489196
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "choice_tendency",
+    "r_test": 0.24507580815569074
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "post_reversal",
+    "r_test": 0.24908256457196892
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "rw_delta_q",
+    "r_test": -0.10235892804183379
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "rw_rpe",
+    "r_test": 0.04949037641693671
+  },
+  {
+    "position": "declare_b",
+    "layer": 10,
+    "target": "rw_q_chosen",
+    "r_test": -0.2224085205145034
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "reward_history",
+    "r_test": 0.8519447275357667
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "recent_reward",
+    "r_test": 0.4561931563125145
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "delta_q",
+    "r_test": 0.14501131635854386
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "rpe_proxy",
+    "r_test": -0.008722220297496572
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "choice_tendency",
+    "r_test": 0.41555615123019823
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "post_reversal",
+    "r_test": 0.2752072461398346
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "rw_delta_q",
+    "r_test": -0.04872829596506855
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "rw_rpe",
+    "r_test": 0.04114214324738525
+  },
+  {
+    "position": "declare_b",
+    "layer": 11,
+    "target": "rw_q_chosen",
+    "r_test": 0.2237531458230945
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "reward_history",
+    "r_test": 0.759469001954648
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "recent_reward",
+    "r_test": 0.26622059354303923
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "delta_q",
+    "r_test": 0.2814219337678332
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "rpe_proxy",
+    "r_test": 0.06842954313492769
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "choice_tendency",
+    "r_test": 0.4680940330289936
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "post_reversal",
+    "r_test": 0.20480798570645328
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "rw_delta_q",
+    "r_test": 0.04976432669570307
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "rw_rpe",
+    "r_test": 0.07654842242121424
+  },
+  {
+    "position": "declare_b",
+    "layer": 12,
+    "target": "rw_q_chosen",
+    "r_test": -0.008517122278620814
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "reward_history",
+    "r_test": 0.6618668081591846
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "recent_reward",
+    "r_test": 0.2803774997631525
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "delta_q",
+    "r_test": 0.09813243082853723
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "rpe_proxy",
+    "r_test": -0.144783225604559
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "choice_tendency",
+    "r_test": 0.35628796140941077
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "post_reversal",
+    "r_test": 0.11343558676018953
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "rw_delta_q",
+    "r_test": 0.030496344723908393
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "rw_rpe",
+    "r_test": -0.06527004501617187
+  },
+  {
+    "position": "declare_b",
+    "layer": 13,
+    "target": "rw_q_chosen",
+    "r_test": 0.020558970183618266
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "reward_history",
+    "r_test": 0.6790680223128264
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "recent_reward",
+    "r_test": 0.38650692530090125
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "delta_q",
+    "r_test": 0.286009420083918
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "rpe_proxy",
+    "r_test": 0.08077089180313758
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "choice_tendency",
+    "r_test": 0.47791805037901114
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "post_reversal",
+    "r_test": 0.1620878482125834
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "rw_delta_q",
+    "r_test": 0.15268416906032137
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "rw_rpe",
+    "r_test": 0.007479538599089621
+  },
+  {
+    "position": "declare_b",
+    "layer": 14,
+    "target": "rw_q_chosen",
+    "r_test": -0.02887022594726793
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "reward_history",
+    "r_test": 0.5911657043530038
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "recent_reward",
+    "r_test": 0.13289957136235206
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "delta_q",
+    "r_test": 0.1769036461951648
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "rpe_proxy",
+    "r_test": 0.15493156335734723
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "choice_tendency",
+    "r_test": 0.20912945559757473
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "post_reversal",
+    "r_test": 0.13820127757460804
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "rw_delta_q",
+    "r_test": 0.20937378187593322
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "rw_rpe",
+    "r_test": 0.0982049297178745
+  },
+  {
+    "position": "declare_b",
+    "layer": 15,
+    "target": "rw_q_chosen",
+    "r_test": 0.07621312868566472
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "reward_history",
+    "r_test": 0.6914347601504129
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "recent_reward",
+    "r_test": 0.26204863202465745
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "delta_q",
+    "r_test": 0.29947311682739697
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "rpe_proxy",
+    "r_test": 0.16054726663286875
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "choice_tendency",
+    "r_test": 0.42498183309503496
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "post_reversal",
+    "r_test": 0.1367415807245067
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "rw_delta_q",
+    "r_test": 0.23159072802482436
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "rw_rpe",
+    "r_test": 0.1379167795435462
+  },
+  {
+    "position": "declare_b",
+    "layer": 16,
+    "target": "rw_q_chosen",
+    "r_test": 0.031088801298621547
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "reward_history",
+    "r_test": 0.6147024881932567
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "recent_reward",
+    "r_test": 0.3005844552337166
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "delta_q",
+    "r_test": 0.18022645280039346
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "rpe_proxy",
+    "r_test": -0.09432583606777949
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "choice_tendency",
+    "r_test": 0.4646444342635541
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "post_reversal",
+    "r_test": 0.33393102719559714
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "rw_delta_q",
+    "r_test": -0.027665351297541968
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "rw_rpe",
+    "r_test": 0.010898351259485076
+  },
+  {
+    "position": "declare_b",
+    "layer": 17,
+    "target": "rw_q_chosen",
+    "r_test": 0.01353815013252481
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "reward_history",
+    "r_test": 0.5229979205792877
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "recent_reward",
+    "r_test": 0.2667004851558295
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "delta_q",
+    "r_test": 0.3687504079690144
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "rpe_proxy",
+    "r_test": 0.19636564195539183
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "choice_tendency",
+    "r_test": 0.3817325242094877
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "post_reversal",
+    "r_test": 0.3383449829225193
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "rw_delta_q",
+    "r_test": -0.12549329136328505
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "rw_rpe",
+    "r_test": 0.15494162501812858
+  },
+  {
+    "position": "declare_b",
+    "layer": 18,
+    "target": "rw_q_chosen",
+    "r_test": -0.08179481087869869
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "reward_history",
+    "r_test": 0.6090441678062953
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "recent_reward",
+    "r_test": 0.22774477258498133
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "delta_q",
+    "r_test": -0.022567410469739986
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "rpe_proxy",
+    "r_test": -0.13552103851851963
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "choice_tendency",
+    "r_test": 0.5684494442787483
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "post_reversal",
+    "r_test": 0.06781088896731627
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "rw_delta_q",
+    "r_test": 0.17713346607682523
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "rw_rpe",
+    "r_test": -0.054523477833194695
+  },
+  {
+    "position": "declare_b",
+    "layer": 19,
+    "target": "rw_q_chosen",
+    "r_test": 0.061736043799245396
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "reward_history",
+    "r_test": 0.7783134456855968
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "recent_reward",
+    "r_test": 0.08039465699404931
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "delta_q",
+    "r_test": 0.03997689368442342
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "rpe_proxy",
+    "r_test": 0.0855169607937814
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "choice_tendency",
+    "r_test": 0.5539014815644977
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "post_reversal",
+    "r_test": 0.1500467520883261
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "rw_delta_q",
+    "r_test": -0.15216396537219445
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "rw_rpe",
+    "r_test": 0.0697581815444136
+  },
+  {
+    "position": "declare_b",
+    "layer": 20,
+    "target": "rw_q_chosen",
+    "r_test": -0.0209712371603928
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "reward_history",
+    "r_test": 0.565333724880003
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "recent_reward",
+    "r_test": 0.21800568506057488
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "delta_q",
+    "r_test": 0.06088096641361292
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "rpe_proxy",
+    "r_test": 0.13098438247380928
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "choice_tendency",
+    "r_test": 0.5302786618178761
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "post_reversal",
+    "r_test": 0.08818828864201775
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "rw_delta_q",
+    "r_test": -0.12183583510006427
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "rw_rpe",
+    "r_test": 0.008339415717090124
+  },
+  {
+    "position": "declare_b",
+    "layer": 21,
+    "target": "rw_q_chosen",
+    "r_test": 0.1500846209196884
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "reward_history",
+    "r_test": 0.6146302966006855
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "recent_reward",
+    "r_test": 0.1602534444324294
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "delta_q",
+    "r_test": 0.33402436109608
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "rpe_proxy",
+    "r_test": -0.10359246273984678
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "choice_tendency",
+    "r_test": 0.520754835655214
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "post_reversal",
+    "r_test": 0.15424071773416798
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "rw_delta_q",
+    "r_test": -0.19116118819198452
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "rw_rpe",
+    "r_test": -0.03316093707834997
+  },
+  {
+    "position": "declare_b",
+    "layer": 22,
+    "target": "rw_q_chosen",
+    "r_test": -0.004591644851383544
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "reward_history",
+    "r_test": 0.563718923990429
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "recent_reward",
+    "r_test": 0.27289031795487606
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "delta_q",
+    "r_test": 0.36092070074449994
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "rpe_proxy",
+    "r_test": -0.06595568021165517
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "choice_tendency",
+    "r_test": 0.6494184810501064
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "post_reversal",
+    "r_test": 0.28297951255077225
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "rw_delta_q",
+    "r_test": -0.008451662924242228
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "rw_rpe",
+    "r_test": -0.014306367816156011
+  },
+  {
+    "position": "declare_b",
+    "layer": 23,
+    "target": "rw_q_chosen",
+    "r_test": -0.068945934117489
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "reward_history",
+    "r_test": 0.5197982472985017
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "recent_reward",
+    "r_test": 0.3314098836292692
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "delta_q",
+    "r_test": 0.40097222886488704
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "rpe_proxy",
+    "r_test": 0.02417962385621874
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "choice_tendency",
+    "r_test": 0.5186801227535242
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "post_reversal",
+    "r_test": 0.26151442985084067
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "rw_delta_q",
+    "r_test": -0.021734838041965503
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "rw_rpe",
+    "r_test": 0.027900482090950966
+  },
+  {
+    "position": "declare_b",
+    "layer": 24,
+    "target": "rw_q_chosen",
+    "r_test": 0.07815285352755927
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "reward_history",
+    "r_test": 0.4646861743373078
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "recent_reward",
+    "r_test": 0.09880308028381812
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "delta_q",
+    "r_test": 0.04939742814610655
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "rpe_proxy",
+    "r_test": 0.012353351446788162
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "choice_tendency",
+    "r_test": 0.673045432576444
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "post_reversal",
+    "r_test": 0.18666090833388066
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "rw_delta_q",
+    "r_test": 0.05445065294777313
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "rw_rpe",
+    "r_test": 0.03189798027746897
+  },
+  {
+    "position": "declare_b",
+    "layer": 25,
+    "target": "rw_q_chosen",
+    "r_test": 0.014699617462092073
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "reward_history",
+    "r_test": 0.5092842599459281
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "recent_reward",
+    "r_test": 0.08398992960234498
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "delta_q",
+    "r_test": 0.25658848071650847
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "rpe_proxy",
+    "r_test": 0.06458016005755694
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "choice_tendency",
+    "r_test": 0.40766017089336726
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "post_reversal",
+    "r_test": 0.2885710403314085
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "rw_delta_q",
+    "r_test": 0.15579391756356264
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "rw_rpe",
+    "r_test": 0.10790164094422856
+  },
+  {
+    "position": "declare_b",
+    "layer": 26,
+    "target": "rw_q_chosen",
+    "r_test": 0.07977885606121483
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "reward_history",
+    "r_test": 0.47723961044685115
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "recent_reward",
+    "r_test": 0.06351924694527257
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "delta_q",
+    "r_test": 0.08849790169350172
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "rpe_proxy",
+    "r_test": 0.2269230498438851
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "choice_tendency",
+    "r_test": 0.4337575879131433
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "post_reversal",
+    "r_test": 0.2442696713090138
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "rw_delta_q",
+    "r_test": -0.16805761491278118
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "rw_rpe",
+    "r_test": 0.17330549556917196
+  },
+  {
+    "position": "declare_b",
+    "layer": 27,
+    "target": "rw_q_chosen",
+    "r_test": -0.02807929035208841
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "reward_history",
+    "r_test": 0.47364880004558446
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "recent_reward",
+    "r_test": 0.014157524768294046
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "delta_q",
+    "r_test": 0.18349530458756041
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "rpe_proxy",
+    "r_test": 0.06681045590353708
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "choice_tendency",
+    "r_test": 0.6769292806236066
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "post_reversal",
+    "r_test": 0.22163883702719478
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "rw_delta_q",
+    "r_test": -0.012536128337547534
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "rw_rpe",
+    "r_test": 0.013055312199756771
+  },
+  {
+    "position": "declare_b",
+    "layer": 28,
+    "target": "rw_q_chosen",
+    "r_test": 0.22901820432962242
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "reward_history",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "recent_reward",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "delta_q",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "rpe_proxy",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "choice_tendency",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "post_reversal",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "rw_delta_q",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "rw_rpe",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 0,
+    "target": "rw_q_chosen",
+    "r_test": NaN
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "reward_history",
+    "r_test": -0.023877454458949933
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "recent_reward",
+    "r_test": 0.09913672411029406
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "delta_q",
+    "r_test": -0.12373953807216248
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "rpe_proxy",
+    "r_test": -0.016470850727191042
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "choice_tendency",
+    "r_test": 0.19147060682609887
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "post_reversal",
+    "r_test": 0.06118349332969361
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "rw_delta_q",
+    "r_test": -0.019103405591678696
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "rw_rpe",
+    "r_test": -0.006914300217181447
+  },
+  {
+    "position": "choice",
+    "layer": 1,
+    "target": "rw_q_chosen",
+    "r_test": 0.01963320177620175
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "reward_history",
+    "r_test": 0.4515913539594121
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "recent_reward",
+    "r_test": 0.44324006766536356
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "delta_q",
+    "r_test": 0.03653593439729198
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "rpe_proxy",
+    "r_test": 0.023897678870306298
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "choice_tendency",
+    "r_test": -0.05827482696622174
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "post_reversal",
+    "r_test": 0.060477694665932745
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "rw_delta_q",
+    "r_test": -0.1948519600528906
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "rw_rpe",
+    "r_test": 0.043782062556091274
+  },
+  {
+    "position": "choice",
+    "layer": 2,
+    "target": "rw_q_chosen",
+    "r_test": -0.01466329298144575
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "reward_history",
+    "r_test": 0.8907669441338614
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "recent_reward",
+    "r_test": 0.6444282310263765
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "delta_q",
+    "r_test": 0.3766230643838518
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "rpe_proxy",
+    "r_test": 0.11093543608978017
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "choice_tendency",
+    "r_test": 0.2252823390561649
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "post_reversal",
+    "r_test": 0.10679347644368385
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "rw_delta_q",
+    "r_test": -0.10479561564031693
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "rw_rpe",
+    "r_test": -0.02570795560354861
+  },
+  {
+    "position": "choice",
+    "layer": 3,
+    "target": "rw_q_chosen",
+    "r_test": 0.004108860728224011
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "reward_history",
+    "r_test": 0.894663859753021
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "recent_reward",
+    "r_test": 0.7156726241903472
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "delta_q",
+    "r_test": -0.0701168919725399
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "rpe_proxy",
+    "r_test": -0.08056185887196886
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "choice_tendency",
+    "r_test": 0.19122786159623642
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "post_reversal",
+    "r_test": 0.07818730252246978
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "rw_delta_q",
+    "r_test": 0.1407981651500491
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "rw_rpe",
+    "r_test": -0.015617852170954748
+  },
+  {
+    "position": "choice",
+    "layer": 4,
+    "target": "rw_q_chosen",
+    "r_test": 0.09721452234395779
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "reward_history",
+    "r_test": 0.9381495856065334
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "recent_reward",
+    "r_test": 0.6010024053648533
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "delta_q",
+    "r_test": 0.19822533628370254
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "rpe_proxy",
+    "r_test": -0.018394858754771905
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "choice_tendency",
+    "r_test": -0.010320233034114888
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "post_reversal",
+    "r_test": 0.2028188130717443
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "rw_delta_q",
+    "r_test": 0.27639503371010454
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "rw_rpe",
+    "r_test": 0.0520232322939725
+  },
+  {
+    "position": "choice",
+    "layer": 5,
+    "target": "rw_q_chosen",
+    "r_test": 0.041461215006297354
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "reward_history",
+    "r_test": 0.8967426237878497
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "recent_reward",
+    "r_test": 0.7768262018748462
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "delta_q",
+    "r_test": -0.05750961748388572
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "rpe_proxy",
+    "r_test": -0.12177329069057376
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "choice_tendency",
+    "r_test": 0.16766795006147206
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "post_reversal",
+    "r_test": 0.10638945382623469
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "rw_delta_q",
+    "r_test": 0.03758357917859004
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "rw_rpe",
+    "r_test": -0.009682875054734258
+  },
+  {
+    "position": "choice",
+    "layer": 6,
+    "target": "rw_q_chosen",
+    "r_test": 0.05100529816674849
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "reward_history",
+    "r_test": 0.9105303634029694
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "recent_reward",
+    "r_test": 0.8132852854063476
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "delta_q",
+    "r_test": 0.25134118082075313
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "rpe_proxy",
+    "r_test": 0.12754373577479144
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "choice_tendency",
+    "r_test": 0.4761121529309953
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "post_reversal",
+    "r_test": 0.010530697986007025
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "rw_delta_q",
+    "r_test": 0.27391077349809184
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "rw_rpe",
+    "r_test": 0.04657388538955032
+  },
+  {
+    "position": "choice",
+    "layer": 7,
+    "target": "rw_q_chosen",
+    "r_test": 0.06243107000537633
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "reward_history",
+    "r_test": 0.8665760413981727
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "recent_reward",
+    "r_test": 0.6332462475196814
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "delta_q",
+    "r_test": 0.4144038732273395
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "rpe_proxy",
+    "r_test": -0.04521970915135058
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "choice_tendency",
+    "r_test": 0.2705236259499388
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "post_reversal",
+    "r_test": 0.16922594748330042
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "rw_delta_q",
+    "r_test": 0.14433925087580102
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "rw_rpe",
+    "r_test": -0.09563803708212729
+  },
+  {
+    "position": "choice",
+    "layer": 8,
+    "target": "rw_q_chosen",
+    "r_test": 0.2962406460338155
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "reward_history",
+    "r_test": 0.8856117637250366
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "recent_reward",
+    "r_test": 0.43439266444074004
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "delta_q",
+    "r_test": 0.12420133986480501
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "rpe_proxy",
+    "r_test": -0.09137810855394743
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "choice_tendency",
+    "r_test": 0.2491167917296716
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "post_reversal",
+    "r_test": 0.08024274052700271
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "rw_delta_q",
+    "r_test": 0.047783367780370546
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "rw_rpe",
+    "r_test": -0.09332304301919331
+  },
+  {
+    "position": "choice",
+    "layer": 9,
+    "target": "rw_q_chosen",
+    "r_test": 0.21680971504003246
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "reward_history",
+    "r_test": 0.9233274498338936
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "recent_reward",
+    "r_test": 0.6090333359132131
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "delta_q",
+    "r_test": 0.19143636400256628
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "rpe_proxy",
+    "r_test": -0.12129294554025646
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "choice_tendency",
+    "r_test": 0.3917198468464659
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "post_reversal",
+    "r_test": 0.27157456576409633
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "rw_delta_q",
+    "r_test": 0.30952931796587946
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "rw_rpe",
+    "r_test": -0.07283083258396479
+  },
+  {
+    "position": "choice",
+    "layer": 10,
+    "target": "rw_q_chosen",
+    "r_test": 0.04562764785199433
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "reward_history",
+    "r_test": 0.8558549635062613
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "recent_reward",
+    "r_test": 0.574580863178312
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "delta_q",
+    "r_test": 0.26361013288211854
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "rpe_proxy",
+    "r_test": -0.11383132502218839
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "choice_tendency",
+    "r_test": 0.5024113690635257
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "post_reversal",
+    "r_test": 0.08126645042111527
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "rw_delta_q",
+    "r_test": 0.14480888664725242
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "rw_rpe",
+    "r_test": -0.004947558098017095
+  },
+  {
+    "position": "choice",
+    "layer": 11,
+    "target": "rw_q_chosen",
+    "r_test": 0.2272131039704088
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "reward_history",
+    "r_test": 0.7853901708871606
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "recent_reward",
+    "r_test": 0.5272107063935038
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "delta_q",
+    "r_test": 0.12242959326548107
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "rpe_proxy",
+    "r_test": -0.05398606933083901
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "choice_tendency",
+    "r_test": 0.26273516603553737
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "post_reversal",
+    "r_test": 0.1558029698057027
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "rw_delta_q",
+    "r_test": 0.018621778656908266
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "rw_rpe",
+    "r_test": 0.007340689054338002
+  },
+  {
+    "position": "choice",
+    "layer": 12,
+    "target": "rw_q_chosen",
+    "r_test": -0.09664493943442382
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "reward_history",
+    "r_test": 0.6830880294315059
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "recent_reward",
+    "r_test": 0.4545456517867816
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "delta_q",
+    "r_test": 0.2772965303203492
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "rpe_proxy",
+    "r_test": 0.013474390015379454
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "choice_tendency",
+    "r_test": 0.4173544154007711
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "post_reversal",
+    "r_test": 0.311034528366145
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "rw_delta_q",
+    "r_test": -0.10441342915078627
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "rw_rpe",
+    "r_test": -0.016419846461777337
+  },
+  {
+    "position": "choice",
+    "layer": 13,
+    "target": "rw_q_chosen",
+    "r_test": 0.08428000611566513
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "reward_history",
+    "r_test": 0.7088813997729997
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "recent_reward",
+    "r_test": 0.42630266145001144
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "delta_q",
+    "r_test": 0.014596825448816093
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "rpe_proxy",
+    "r_test": 0.022496733627973248
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "choice_tendency",
+    "r_test": 0.5952857800416618
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "post_reversal",
+    "r_test": 0.2862682051948065
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "rw_delta_q",
+    "r_test": 0.23687442437153527
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "rw_rpe",
+    "r_test": 0.06354556891796989
+  },
+  {
+    "position": "choice",
+    "layer": 14,
+    "target": "rw_q_chosen",
+    "r_test": -0.04927749878604925
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "reward_history",
+    "r_test": 0.6801553203774557
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "recent_reward",
+    "r_test": 0.38612474202102665
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "delta_q",
+    "r_test": 0.17238462276279937
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "rpe_proxy",
+    "r_test": -0.08364852752052122
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "choice_tendency",
+    "r_test": 0.42266075227521765
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "post_reversal",
+    "r_test": 0.3610036888175252
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "rw_delta_q",
+    "r_test": -0.04092543288870136
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "rw_rpe",
+    "r_test": -0.01988430753524818
+  },
+  {
+    "position": "choice",
+    "layer": 15,
+    "target": "rw_q_chosen",
+    "r_test": 0.055928687233352425
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "reward_history",
+    "r_test": 0.49310891233330956
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "recent_reward",
+    "r_test": 0.33946965647139193
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "delta_q",
+    "r_test": 0.2874381413265688
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "rpe_proxy",
+    "r_test": -0.0396712271024195
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "choice_tendency",
+    "r_test": 0.406368214482865
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "post_reversal",
+    "r_test": 0.19488117072774128
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "rw_delta_q",
+    "r_test": 0.22351241625223736
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "rw_rpe",
+    "r_test": -0.047340355145993746
+  },
+  {
+    "position": "choice",
+    "layer": 16,
+    "target": "rw_q_chosen",
+    "r_test": -0.16526199820813722
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "reward_history",
+    "r_test": 0.5436085076977013
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "recent_reward",
+    "r_test": 0.31478362820094213
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "delta_q",
+    "r_test": 0.017014965920719563
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "rpe_proxy",
+    "r_test": 0.12941394873961995
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "choice_tendency",
+    "r_test": 0.5745047135211082
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "post_reversal",
+    "r_test": 0.28623619966110897
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "rw_delta_q",
+    "r_test": 0.09930469663652672
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "rw_rpe",
+    "r_test": 0.04959061727568706
+  },
+  {
+    "position": "choice",
+    "layer": 17,
+    "target": "rw_q_chosen",
+    "r_test": 0.1409901414287021
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "reward_history",
+    "r_test": 0.4064535240694153
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "recent_reward",
+    "r_test": 0.20038056122659437
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "delta_q",
+    "r_test": 0.25092215981066784
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "rpe_proxy",
+    "r_test": -0.12186211279796082
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "choice_tendency",
+    "r_test": 0.6361573532953418
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "post_reversal",
+    "r_test": 0.25960957088940556
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "rw_delta_q",
+    "r_test": 0.06369641015681474
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "rw_rpe",
+    "r_test": -0.05306962367444009
+  },
+  {
+    "position": "choice",
+    "layer": 18,
+    "target": "rw_q_chosen",
+    "r_test": -0.04429055729991133
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "reward_history",
+    "r_test": 0.39352219843817066
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "recent_reward",
+    "r_test": 0.35208123222868865
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "delta_q",
+    "r_test": 0.41777409174396885
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "rpe_proxy",
+    "r_test": 0.016079911711139698
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "choice_tendency",
+    "r_test": 0.582946380132134
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "post_reversal",
+    "r_test": 0.17018717698641106
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "rw_delta_q",
+    "r_test": 0.11774085771847612
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "rw_rpe",
+    "r_test": -0.06747665080587201
+  },
+  {
+    "position": "choice",
+    "layer": 19,
+    "target": "rw_q_chosen",
+    "r_test": -0.11204703023663579
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "reward_history",
+    "r_test": 0.5793999695619334
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "recent_reward",
+    "r_test": 0.1723228289833836
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "delta_q",
+    "r_test": 0.09571398313896566
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "rpe_proxy",
+    "r_test": -0.07453681770381856
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "choice_tendency",
+    "r_test": 0.7205708592366938
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "post_reversal",
+    "r_test": 0.24940296420999766
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "rw_delta_q",
+    "r_test": 0.21299078532670074
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "rw_rpe",
+    "r_test": 0.0034391545457951402
+  },
+  {
+    "position": "choice",
+    "layer": 20,
+    "target": "rw_q_chosen",
+    "r_test": -0.04564347300167457
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "reward_history",
+    "r_test": 0.47068330927227053
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "recent_reward",
+    "r_test": 0.38238165326719487
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "delta_q",
+    "r_test": 0.3629324497918795
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "rpe_proxy",
+    "r_test": 0.08032700542530961
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "choice_tendency",
+    "r_test": 0.5716165154015961
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "post_reversal",
+    "r_test": 0.33048366263539963
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "rw_delta_q",
+    "r_test": -0.13630386210557122
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "rw_rpe",
+    "r_test": 0.08583381381518851
+  },
+  {
+    "position": "choice",
+    "layer": 21,
+    "target": "rw_q_chosen",
+    "r_test": -0.015399759284318023
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "reward_history",
+    "r_test": 0.36023701102019173
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "recent_reward",
+    "r_test": 0.30846545950088655
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "delta_q",
+    "r_test": 0.5427976894648212
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "rpe_proxy",
+    "r_test": -0.018897606077819425
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "choice_tendency",
+    "r_test": 0.8500573047852346
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "post_reversal",
+    "r_test": 0.13438861671023816
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "rw_delta_q",
+    "r_test": -0.2139045454745774
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "rw_rpe",
+    "r_test": 0.054679978738467264
+  },
+  {
+    "position": "choice",
+    "layer": 22,
+    "target": "rw_q_chosen",
+    "r_test": -0.03662331901147954
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "reward_history",
+    "r_test": 0.5627274788616289
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "recent_reward",
+    "r_test": 0.2350799958335402
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "delta_q",
+    "r_test": 0.19457655356681167
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "rpe_proxy",
+    "r_test": 0.08067993903678117
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "choice_tendency",
+    "r_test": 0.8985214274419784
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "post_reversal",
+    "r_test": 0.2560347992908961
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "rw_delta_q",
+    "r_test": 0.009902076087473484
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "rw_rpe",
+    "r_test": 0.03698406852535274
+  },
+  {
+    "position": "choice",
+    "layer": 23,
+    "target": "rw_q_chosen",
+    "r_test": 0.04650435801043403
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "reward_history",
+    "r_test": 0.5808593570987707
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "recent_reward",
+    "r_test": 0.33150189682974984
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "delta_q",
+    "r_test": 0.23563731601333002
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "rpe_proxy",
+    "r_test": 0.06307989351893176
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "choice_tendency",
+    "r_test": 0.8452260023621909
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "post_reversal",
+    "r_test": 0.309145090029945
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "rw_delta_q",
+    "r_test": 0.14004870165376596
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "rw_rpe",
+    "r_test": 0.10145310748855668
+  },
+  {
+    "position": "choice",
+    "layer": 24,
+    "target": "rw_q_chosen",
+    "r_test": 0.03817722680749188
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "reward_history",
+    "r_test": 0.44259236082679665
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "recent_reward",
+    "r_test": 0.3120321293922711
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "delta_q",
+    "r_test": 0.41113266483121685
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "rpe_proxy",
+    "r_test": 0.1084961587097146
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "choice_tendency",
+    "r_test": 0.9260251828876686
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "post_reversal",
+    "r_test": 0.33309027303981426
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "rw_delta_q",
+    "r_test": 0.12128166040722324
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "rw_rpe",
+    "r_test": 0.12553660052457744
+  },
+  {
+    "position": "choice",
+    "layer": 25,
+    "target": "rw_q_chosen",
+    "r_test": -0.030696665518961885
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "reward_history",
+    "r_test": 0.4394887908659072
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "recent_reward",
+    "r_test": 0.48577718558561406
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "delta_q",
+    "r_test": 0.4550993624268986
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "rpe_proxy",
+    "r_test": -0.003630887296712401
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "choice_tendency",
+    "r_test": 0.9072754521494137
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "post_reversal",
+    "r_test": 0.15564057129572986
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "rw_delta_q",
+    "r_test": 0.23640201102572805
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "rw_rpe",
+    "r_test": -0.020753207644926556
+  },
+  {
+    "position": "choice",
+    "layer": 26,
+    "target": "rw_q_chosen",
+    "r_test": -0.12303475195009335
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "reward_history",
+    "r_test": 0.3057658901474117
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "recent_reward",
+    "r_test": 0.24051912053569532
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "delta_q",
+    "r_test": 0.21645542312503074
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "rpe_proxy",
+    "r_test": -0.017293214753445616
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "choice_tendency",
+    "r_test": 0.968711565968103
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "post_reversal",
+    "r_test": 0.32119051581121405
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "rw_delta_q",
+    "r_test": -0.028963576556370375
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "rw_rpe",
+    "r_test": 0.04850921983701967
+  },
+  {
+    "position": "choice",
+    "layer": 27,
+    "target": "rw_q_chosen",
+    "r_test": -0.16686766745853862
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "reward_history",
+    "r_test": 0.2882286446611338
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "recent_reward",
+    "r_test": 0.18302423797064582
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "delta_q",
+    "r_test": 0.47507417130160073
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "rpe_proxy",
+    "r_test": -0.0027861405119962205
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "choice_tendency",
+    "r_test": 0.9582309800345631
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "post_reversal",
+    "r_test": 0.2217961100780406
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "rw_delta_q",
+    "r_test": -0.03609927247659521
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "rw_rpe",
+    "r_test": 0.0014502933777118452
+  },
+  {
+    "position": "choice",
+    "layer": 28,
+    "target": "rw_q_chosen",
+    "r_test": 0.09881062662105461
+  }
+]

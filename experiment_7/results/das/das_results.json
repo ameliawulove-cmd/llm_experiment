@@ -1,0 +1,121 @@
+{
+  "probe": {
+    "w_norm": 17.345,
+    "position": "choice",
+    "layer": 27,
+    "n_train": 1200,
+    "n_val": 300
+  },
+  "runs": [
+    {
+      "variable": "reward_history",
+      "layer": 5,
+      "k": 8,
+      "iia_val": 0.806,
+      "iia_val_final": 0.652,
+      "iia_train": 0.748,
+      "R_path": "results/exp7h/R_reward_history_L5_k8.npy",
+      "history_last": null
+    },
+    {
+      "variable": "reward_history",
+      "layer": 5,
+      "k": 16,
+      "iia_val": 0.814,
+      "iia_val_final": 0.792,
+      "iia_train": 0.808,
+      "R_path": "results/exp7h/R_reward_history_L5_k16.npy",
+      "history_last": null
+    },
+    {
+      "variable": "reward_history",
+      "layer": 5,
+      "k": 32,
+      "iia_val": 0.782,
+      "iia_val_final": 0.732,
+      "iia_train": 0.799,
+      "R_path": "results/exp7h/R_reward_history_L5_k32.npy",
+      "history_last": null
+    },
+    {
+      "variable": "reward_history",
+      "layer": 14,
+      "k": 8,
+      "iia_val": 0.842,
+      "iia_val_final": 0.84,
+      "iia_train": 0.857,
+      "R_path": "results/exp7h/R_reward_history_L14_k8.npy",
+      "history_last": null
+    },
+    {
+      "variable": "reward_history",
+      "layer": 14,
+      "k": 16,
+      "iia_val": 0.852,
+      "iia_val_final": 0.796,
+      "iia_train": 0.853,
+      "R_path": "results/exp7h/R_reward_history_L14_k16.npy",
+      "history_last": null
+    },
+    {
+      "variable": "choice_tendency",
+      "layer": 14,
+      "k": 16,
+      "iia_val": 0.8799999952316284,
+      "iia_val_final": 0.8579999804496765,
+      "iia_train": 0.8995000123977661,
+      "R_path": "/Users/amelia/Desktop/llmneuroscientist/results/exp7h/R_choice_tendency_L14_k16.npy",
+      "history_last": {
+        "step": 299,
+        "loss": 0.2513107657432556,
+        "iia_train": 0.8995000123977661,
+        "iia_val": 0.8579999804496765
+      }
+    },
+    {
+      "variable": "choice_tendency",
+      "layer": 27,
+      "k": 16,
+      "iia_val": 0.9919999837875366,
+      "iia_val_final": 0.9919999837875366,
+      "iia_train": 1.0,
+      "R_path": "/Users/amelia/Desktop/llmneuroscientist/results/exp7h/R_choice_tendency_L27_k16.npy",
+      "history_last": {
+        "step": 299,
+        "loss": 0.003108896082267165,
+        "iia_train": 1.0,
+        "iia_val": 0.9919999837875366
+      }
+    },
+    {
+      "variable": "delta_q",
+      "layer": 14,
+      "k": 16,
+      "iia_val": 0.5699999928474426,
+      "iia_val_final": 0.5540000200271606,
+      "iia_train": 0.8504999876022339,
+      "R_path": "/Users/amelia/Desktop/llmneuroscientist/results/exp7h/R_delta_q_L14_k16.npy",
+      "history_last": {
+        "step": 299,
+        "loss": 0.4023779034614563,
+        "iia_train": 0.8504999876022339,
+        "iia_val": 0.5540000200271606
+      }
+    },
+    {
+      "variable": "delta_q",
+      "layer": 27,
+      "k": 16,
+      "iia_val": 0.6179999709129333,
+      "iia_val_final": 0.6060000061988831,
+      "iia_train": 0.9244999885559082,
+      "R_path": "/Users/amelia/Desktop/llmneuroscientist/results/exp7h/R_delta_q_L27_k16.npy",
+      "history_last": {
+        "step": 299,
+        "loss": 0.2312435507774353,
+        "iia_train": 0.9244999885559082,
+        "iia_val": 0.6060000061988831
+      }
+    }
+  ]
+}

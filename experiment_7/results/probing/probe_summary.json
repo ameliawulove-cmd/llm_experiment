@@ -1,0 +1,191 @@
+{
+  "best_r": {
+    "choice|choice_tendency": {
+      "r": 0.968711565968103,
+      "layer": 27
+    },
+    "choice|delta_q": {
+      "r": 0.5427976894648212,
+      "layer": 22
+    },
+    "choice|post_reversal": {
+      "r": 0.3610036888175252,
+      "layer": 15
+    },
+    "choice|recent_reward": {
+      "r": 0.8132852854063476,
+      "layer": 7
+    },
+    "choice|reward_history": {
+      "r": 0.9381495856065334,
+      "layer": 5
+    },
+    "choice|rpe_proxy": {
+      "r": 0.12941394873961995,
+      "layer": 17
+    },
+    "choice|rw_delta_q": {
+      "r": 0.30952931796587946,
+      "layer": 10
+    },
+    "choice|rw_q_chosen": {
+      "r": 0.2962406460338155,
+      "layer": 8
+    },
+    "choice|rw_rpe": {
+      "r": 0.12553660052457744,
+      "layer": 25
+    },
+    "declare_a|choice_tendency": {
+      "r": 0.5557629122410399,
+      "layer": 15
+    },
+    "declare_a|delta_q": {
+      "r": 0.6720778045893929,
+      "layer": 14
+    },
+    "declare_a|post_reversal": {
+      "r": 0.50080936622661,
+      "layer": 24
+    },
+    "declare_a|recent_reward": {
+      "r": 0.7802053692697584,
+      "layer": 4
+    },
+    "declare_a|reward_history": {
+      "r": 0.9461970574074227,
+      "layer": 7
+    },
+    "declare_a|rpe_proxy": {
+      "r": 0.13116954103105333,
+      "layer": 23
+    },
+    "declare_a|rw_delta_q": {
+      "r": 0.32441479105235316,
+      "layer": 5
+    },
+    "declare_a|rw_q_chosen": {
+      "r": 0.21458352388287363,
+      "layer": 28
+    },
+    "declare_a|rw_rpe": {
+      "r": 0.09699159103574563,
+      "layer": 18
+    },
+    "declare_b|choice_tendency": {
+      "r": 0.6769292806236066,
+      "layer": 28
+    },
+    "declare_b|delta_q": {
+      "r": 0.4397540098793207,
+      "layer": 2
+    },
+    "declare_b|post_reversal": {
+      "r": 0.36960555319910254,
+      "layer": 6
+    },
+    "declare_b|recent_reward": {
+      "r": 0.8288809862988937,
+      "layer": 7
+    },
+    "declare_b|reward_history": {
+      "r": 0.9270634193299373,
+      "layer": 5
+    },
+    "declare_b|rpe_proxy": {
+      "r": 0.2269230498438851,
+      "layer": 27
+    },
+    "declare_b|rw_delta_q": {
+      "r": 0.2372738143873879,
+      "layer": 9
+    },
+    "declare_b|rw_q_chosen": {
+      "r": 0.22901820432962242,
+      "layer": 28
+    },
+    "declare_b|rw_rpe": {
+      "r": 0.17330549556917196,
+      "layer": 27
+    }
+  },
+  "theory_vs_model": [
+    {
+      "position": "declare_a",
+      "theory_target": "delta_q",
+      "model_target": "rw_delta_q",
+      "r_theory": 0.6720778045893929,
+      "r_model": 0.32441479105235316,
+      "best_layer_theory": 14,
+      "best_layer_model": 5,
+      "winner": "theory"
+    },
+    {
+      "position": "declare_a",
+      "theory_target": "rpe_proxy",
+      "model_target": "rw_rpe",
+      "r_theory": 0.13116954103105333,
+      "r_model": 0.09699159103574563,
+      "best_layer_theory": 23,
+      "best_layer_model": 18,
+      "winner": "theory"
+    },
+    {
+      "position": "declare_b",
+      "theory_target": "delta_q",
+      "model_target": "rw_delta_q",
+      "r_theory": 0.4397540098793207,
+      "r_model": 0.2372738143873879,
+      "best_layer_theory": 2,
+      "best_layer_model": 9,
+      "winner": "theory"
+    },
+    {
+      "position": "declare_b",
+      "theory_target": "rpe_proxy",
+      "model_target": "rw_rpe",
+      "r_theory": 0.2269230498438851,
+      "r_model": 0.17330549556917196,
+      "best_layer_theory": 27,
+      "best_layer_model": 27,
+      "winner": "theory"
+    },
+    {
+      "position": "choice",
+      "theory_target": "delta_q",
+      "model_target": "rw_delta_q",
+      "r_theory": 0.5427976894648212,
+      "r_model": 0.30952931796587946,
+      "best_layer_theory": 22,
+      "best_layer_model": 10,
+      "winner": "theory"
+    },
+    {
+      "position": "choice",
+      "theory_target": "rpe_proxy",
+      "model_target": "rw_rpe",
+      "r_theory": 0.12941394873961995,
+      "r_model": 0.12553660052457744,
+      "best_layer_theory": 17,
+      "best_layer_model": 25,
+      "winner": "theory"
+    }
+  ],
+  "best_per_position": {
+    "choice": {
+      "target": "choice_tendency",
+      "r": 0.968711565968103,
+      "layer": 27
+    },
+    "declare_a": {
+      "target": "reward_history",
+      "r": 0.9461970574074227,
+      "layer": 7
+    },
+    "declare_b": {
+      "target": "reward_history",
+      "r": 0.9270634193299373,
+      "layer": 5
+    }
+  }
+}

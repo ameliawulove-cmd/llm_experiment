@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Large data files
+*.npy
+*.npz
+*.pt
+*.safetensors
+data/
+
+# EXCEPTION: keep the small frozen DAS subspace
+!results/das/R_choice_tendency_L27_k16.npy
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
