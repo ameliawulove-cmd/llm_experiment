@@ -1,191 +1,259 @@
-# Experiment 7 — What Information Does Qwen Store About Its Own Choices?
+# Experiment 7 — Internal Representations and Causal Interventions
 
-> **Model:** Qwen3-0.6B &nbsp;|&nbsp; **Task:** Two-armed reversal bandit &nbsp;|&nbsp; **Status:** Complete, pre-registered confirmatory validation
+This experiment investigates what decision-related information is encoded in the hidden activations of Qwen3-0.6B during a bandit task, and whether directly modifying those activations produces a predictable change in the model's output.
 
-We ran a language model on a bandit task and asked two questions:
+The experiment uses two complementary methods:
 
-1. **Can we read decision-related information from its hidden layers?** (Linear Probing)
-2. **If we directly modify a hidden layer, does the model's output change as expected?** (DAS)
+1. **Linear Probing** — tests whether specific variables can be decoded from hidden activations using a linear model.
+2. **Distributed Alignment Search (DAS)** — tests whether interventions on a learned activation subspace produce a directional change in model output.
 
-These are different questions. The first is about correlation. The second is about causal sensitivity.
-
----
-
-## The Task
-
-Qwen3-0.6B plays a two-armed bandit. On each trial it sees a history of past choices and rewards for arm A and arm B, then picks an arm.
-
-- 50 episodes, 30 trials each = **1,500 trials** in the training dataset
-- Arms swap reward probabilities around trial 15 of each episode
-- Reward probabilities: 0.8 (good arm) / 0.2 (bad arm)
+These address different questions. Linear probing is a test of decodability. DAS is a test of causal sensitivity.
 
 ---
 
-## Method 1 — Linear Probing
+## 1. Experimental Task
 
-### What it tests
-Can a single linear function predict a specific variable from one layer's hidden state vector?
+Qwen3-0.6B performs a two-armed reversal bandit task.
 
-If yes → that information is **linearly decodable** from that layer.  
-This tells us the information *exists* in the layer. It does not tell us the model *uses* it.
+| Task component | Description |
+|----------------|-------------|
+| Options | A and B |
+| Reward probabilities | 0.80 for the better option; 0.20 for the worse option |
+| Reversal | The better option changes around trial 15 of each episode |
+| Dataset | 50 episodes × 30 trials = 1,500 trials |
+| Information available | Previous choices and reward outcomes |
+| Information withheld | True reward probabilities and reversal timing |
+| Model learning | No weight updates |
 
-### Input → Process → Output
+---
 
-**Input**
+## 2. Linear Probing
 
-For each of the 1,500 trials, we have:
-- The model's hidden state at one transformer layer (1,024 numbers per trial)
-- A target variable for that trial — e.g., the model's A−B logit difference
+### Research Question
 
-**Process**
+Can a linear model predict decision-related variables from the hidden activations of Qwen3-0.6B?
 
-We train a linear probe: find a 1,024-dimensional weight vector W such that  
-`ŷ = W · h` predicts the target as closely as possible.
+If yes, that variable is **linearly decodable** from that layer. This tells us the information is present in the activations. It does not tell us the model uses it when choosing an action.
 
-Steps:
-1. Split 50 episodes into **35 training** (1,050 trials) and **15 test** (450 trials) — split by episode, so all 30 trials from one episode stay together
-2. Subtract the training-set mean from all hidden states (mean-centring)
-3. Fit W using Ordinary Least Squares (`np.linalg.lstsq`) — one analytic solve, no gradient descent
-4. Apply W to the 450 test trials
-5. Measure Pearson r between predicted and actual values on the test set
+### Model
 
-We repeat this for all 29 layers and 7 target variables.
+Qwen3-0.6B (28 transformer blocks; hidden size 1,024)
 
-**Train / test split in detail**
+### Input
+
+- Hidden activations from one transformer layer, extracted at the choice token position
+- One activation vector per trial: shape (1,024,)
+- A target variable for each trial — for example, the model's A−B logit difference
+
+### Method
+
+**Ordinary Least Squares (OLS) linear probe**
+
+A linear weight vector W is fitted to predict a target variable y from hidden activations h:
+
+```
+ŷ = W · h
+```
+
+The language model remains frozen. Only W is estimated.
+
+### Process
+
+**Step 1 — Generate experimental data**
+
+Run Qwen3-0.6B on the bandit task and collect trial histories, choices, and rewards for 1,500 trials across 50 episodes.
+
+**Step 2 — Extract hidden activations**
+
+Pass each trial's prompt through Qwen3-0.6B and record the hidden state at the choice token position for all 29 layer indices (embedding output + 28 block outputs).
+
+**Step 3 — Construct the probing dataset**
+
+For each (layer, target variable) pair, assemble:
+
+- **X:** Hidden activation matrix, shape (1,500, 1,024)
+- **y:** Target variable values, shape (1,500,)
+
+**Step 4 — Split by episode**
+
+Divide the 50 episodes into training and test sets at the episode level, so all 30 trials from one episode remain in the same set.
 
 | Set | Episodes | Trials | Use |
 |-----|----------|--------|-----|
 | Training | 35 (randomly selected, seed=42) | 1,050 | Fit probe weights W |
-| Test | 15 (held out, never seen during fitting) | 450 | Measure Pearson r |
+| Test | 15 (held out, never seen during fitting) | 450 | Evaluate Pearson r |
 
-No validation set is needed — OLS has no hyperparameters to tune.  
-No preprocessing is applied to the test set before first fitting on the training set.
+No validation set is required: OLS has no hyperparameters.
 
-**Output**
+**Step 5 — Train the probe**
 
-One Pearson r value per (layer, target variable). The best layer for each variable.
+Mean-centre X using the training-set mean. Fit W using `np.linalg.lstsq` — a single analytic solve with no gradient descent.
 
-### Verified Results
+**Step 6 — Evaluate predictions**
 
-Source: `results/probing/probe_summary.json`, test set only (450 trials, 15 unseen episodes).
+Apply W to the 450 held-out test trials. Measure Pearson r between predicted and actual target values.
+
+Repeat for all 29 layers and all target variables.
+
+### Output
+
+- One Pearson r value per (layer, target variable) combination
+- Best layer and r for each target variable
+- Full layer profile saved to `results/probing/probe_results.json`
+
+### Key Findings
+
+Source: `results/probing/probe_summary.json` — test set only (450 trials, 15 held-out episodes).
 
 | Target variable | What it measures | Best layer | Pearson r |
-|----------------|-----------------|-----------|-----------|
-| **choice_tendency** | Qwen's calibrated A−B logit margin | **27** | **0.969** |
-| reward_history | Cumulative mean reward so far | 5 | 0.938 |
-| recent_reward | Mean reward over last 3 trials | 7 | 0.813 |
-| delta_q (stated) | Model's stated Q(A) − Q(B) | 22 | 0.543 |
-| post_reversal | Binary: before/after arm swap | 15 | 0.361 |
-| rpe_proxy | Reward − Q(chosen) | 17 | 0.129 |
+|----------------|-----------------|------------|-----------|
+| **Choice tendency** | Calibrated A−B logit margin | **27** | **0.969** |
+| Reward history | Cumulative mean reward so far | 5 | 0.938 |
+| Recent reward | Mean reward over last 3 trials | 7 | 0.813 |
+| Delta Q (stated) | Model's stated Q(A) − Q(B) | 22 | 0.543 |
+| Post-reversal | Binary: before / after arm swap | 15 | 0.361 |
+| RPE proxy | Reward − Q(chosen) | 17 | 0.129 |
 
-**What this means:** Layer 27 (the last transformer block output) encodes the model's upcoming choice tendency with r = 0.969 on held-out episodes. Early layers (5–7) encode reward history more strongly than choice tendency.
+Layer 27 (the final transformer block output) encodes the model's upcoming choice tendency with r = 0.969 on held-out episodes. Earlier layers (5–7) encode reward history more strongly than choice tendency.
 
-**What this does not mean:** Finding that a variable is decodable from a layer does not prove the model uses that layer to make its choice. It is a correlation result.
+**Limitation:** Decodability does not establish that the model causally uses Layer 27 activations when selecting an action. This is a correlation result.
 
 ---
 
-## Method 2 — DAS (Distributed Alignment Search)
+## 3. Distributed Alignment Search (DAS)
 
-### What it tests
-If we directly replace part of a layer's hidden state, does the model's output change in the expected direction more than a random replacement would?
+### Research Question
 
-### Input → Process → Output
+Does directly modifying a learned activation subspace produce a predictable, directional change in the model's output?
 
-**Input**
+Linear probing identifies where information can be decoded. DAS tests whether that location is causally sensitive: if the activation is changed in the direction the probe associates with a different choice tendency, does the model's output shift in the expected direction?
 
-- The same 1,500-trial activation matrix, one layer at a time
-- Pairs of trials: a **base** trial and a **source** trial, with clearly different target values
-- A probe direction W (fitted on the training set) that defines "correct direction"
+### Model
 
-**Process**
+Qwen3-0.6B (intervention applied at Layer 27, the final transformer block output)
 
-We learn a 16-dimensional subspace R (a 1,024×16 matrix with orthonormal columns).  
-For a base/source pair, the intervention is:
+### Input
+
+- Hidden activations from Layer 27, extracted for all 1,500 trials
+- Pairs of trials: a **base** trial and a **source** trial with clearly different choice tendency values
+- The linear probe direction W fitted during the probing experiment
+
+### Method
+
+**Distributed Alignment Search (DAS)**
+
+DAS learns a 16-dimensional orthonormal subspace R (shape: 1,024 × 16). An intervention replaces the component of the base activation that lies within R's subspace with the corresponding component from the source activation:
 
 ```
 h_intervened = h_base + R · R^T · (h_source − h_base)
 ```
 
-This copies the component of (h_source − h_base) that lies within R's subspace into h_base.
+R is parameterised as the Q factor of a QR decomposition, ensuring exact orthonormality throughout training. The language model's weights remain frozen.
 
-Training steps:
-1. Use the first 1,200 rows of data (episodes seq_0000–seq_0039) as training
-2. Use the last 300 rows (episodes seq_0040–seq_0049) as validation
-3. Sample 2,000 training pairs and 500 validation pairs
-4. Train R to maximise directional agreement: the probe score should shift toward the source
-5. Save the R with the highest validation directional agreement
+### Process
 
-Parameterisation: R is computed as the Q factor of a QR decomposition, so it is always exactly orthonormal during training.
+**Step 1 — Split the data**
 
-**Train / validation / test split in detail**
+Divide the 1,500-trial dataset by row index into training and internal validation sets.
 
 | Set | Rows | Episodes | Use |
 |-----|------|----------|-----|
-| Training | 0–1199 | seq_0000–seq_0039 | Fit R |
-| Validation | 1200–1499 | seq_0040–seq_0049 | Select best R checkpoint |
-| Confirmatory test (V2) | 600 trials from 20 entirely new episodes | Never seen in any prior step | Measure causal effect |
+| Training | 0–1,199 | seq_0000–seq_0039 | Fit R |
+| Internal validation | 1,200–1,499 | seq_0040–seq_0049 | Select best R checkpoint |
+| Confirmatory test (V2) | 600 trials from 20 new episodes | Never used in any prior step | Measure causal effect |
 
-The training and validation sets have **zero episode overlap** — verified by automated test.
+The training and internal validation sets have zero episode overlap, verified by automated test.
 
-The confirmatory test (V2) uses **20 completely new episodes** generated after the protocol was frozen. These are independent of both the training and validation sets.
+**Step 2 — Construct intervention pairs**
 
-**Output**
+Sample base and source trials with clearly different choice tendency values: 2,000 pairs for training, 500 pairs for internal validation.
 
-- A frozen R matrix: `results/das/R_choice_tendency_L27_k16.npy`, shape (1,024, 16)
-- After V2 intervention: for each trial, we compare the A/B logit difference before and after replacing L27's last-token activation
+**Step 3 — Train the subspace R**
 
-### Verified Results
+For each base/source pair, apply the DAS intervention formula. Compute the signed probe-score shift:
 
-Source: `VALIDATION_EXP7_V2/results/confirmatory_run/summary.json` and `VALIDATION_RESULTS.md`.
+```
+shift = sign(v_source − v_base) × (probe_score(h_intervened) − probe_score(h_base))
+```
+
+Train R to maximise the fraction of pairs where this shift is positive (directional agreement).
+
+**Step 4 — Select the best checkpoint**
+
+Save the R matrix that achieves the highest directional agreement on the internal validation set.
+
+**Step 5 — Freeze the subspace**
+
+Lock the trained R matrix before the confirmatory experiment. Saved to `results/das/R_choice_tendency_L27_k16.npy`.
+
+**Step 6 — Pre-register the confirmatory protocol**
+
+Document the exact evaluation procedure in `validation/FINAL_PROTOCOL.md` before collecting new data. Record artifact hashes in `validation/REPRODUCIBILITY_MANIFEST.json`.
+
+**Step 7 — Run the V2 confirmatory experiment**
+
+Collect 20 entirely new episodes. Apply the frozen R at Layer 27 using a replacement hook. Compare each DAS intervention against 10 norm-matched random subspaces. Evaluate using a 10-cluster bootstrap (10,000 resamples, seed 8128).
+
+### Output
+
+- Frozen intervention subspace: `results/das/R_choice_tendency_L27_k16.npy`, shape (1,024, 16)
+- DAS training metrics: `results/das/das_results.json`
+- V2 confirmatory results: `results/validation/VALIDATION_RESULTS.md` and `results/validation/summary.json`
+
+### Key Findings
+
+Source: `results/validation/summary.json` and `results/validation/VALIDATION_RESULTS.md` — confirmatory V2 run, 20 new episodes, pre-registered protocol.
 
 **Primary result** (pre-specified outcome):
 
-| Measure | DAS | Norm-matched random (mean of 10 bases) |
-|---------|-----|---------------------------------------|
-| Mean absolute A/B logit change | **0.138** | 0.026 |
-| Paired difference (DAS − random) | **0.112** | — |
-| 95% bootstrap CI | **[0.078, 0.151]** | — |
-| Clusters with positive difference | **10/10** | — |
+| Measure | DAS | Norm-matched random |
+|---------|-----|---------------------|
+| Mean absolute A/B logit change | 0.138 | 0.026 |
+| Paired difference (DAS − random) | 0.112 | — |
+| 95% bootstrap CI | [0.078, 0.151] | — |
+| Clusters with positive difference | 10 / 10 | — |
 
 **Secondary results** (exploratory, not pre-specified):
 
 | Measure | DAS | Random |
 |---------|-----|--------|
-| Directional agreement | **76.0%** (152/200) | 50.85% (1,017/2,000) |
-| A/B restricted argmax flip | **0 / 200** | 0 / 2,000 |
-| Calibrated threshold crossing | 1/200 | 7/2,000 |
+| Directional agreement | 76.0% (152 / 200) | 50.85% (1,017 / 2,000) |
+| A/B argmax flips | 0 / 200 | 0 / 2,000 |
+| Calibrated threshold crossings | 1 / 200 | 7 / 2,000 |
 
-**What this means:** The trained 16D subspace at Layer 27 produces significantly larger and more directionally consistent logit changes than equally sized random subspaces, on completely new episodes with a pre-registered protocol.
+The trained 16-dimensional subspace at Layer 27 produced significantly larger and more directionally consistent logit changes than norm-matched random subspaces, evaluated on entirely new episodes under a pre-registered protocol.
 
----
-
-## What the Results Do Not Show
-
-**No choice flip occurred.**  
-Zero out of 200 DAS interventions changed which arm had the higher logit. The model has a persistent +3–4 logit bias toward arm A (from pretraining), which the 2.9-norm intervention cannot overcome.
-
-**Probe r = 0.969 is not proof of a causal mechanism.**  
-It shows that Layer 27 activations can predict the choice tendency. It does not show that Layer 27 *causes* the choice.
-
-**DAS sensitivity ≠ DAS necessity.**  
-The DAS result shows that the 16D subspace responds causally. It does not show this subspace is the only or necessary mediator of decisions.
-
-**The model's decision algorithm is not identified.**  
-Behaviour fits Rescorla-Wagner and Recency equally (ΔBIC = 0.05). We cannot distinguish them from behavioural data alone.
+**Limitation:** Zero out of 200 interventions changed which arm had the higher logit. The model carries a persistent A-token bias from pretraining that the intervention norm cannot overcome. This result supports a causal effect on the measured output quantity, not a claim of behavioural control.
 
 ---
 
-## Repository Structure
+## 4. Scope and Limitations
+
+**No choice flip occurred.**
+Zero DAS interventions changed the A/B argmax. The model's persistent letter-token prior prevents argmax flips at the intervention norm used.
+
+**Probe r = 0.969 is not proof of a causal mechanism.**
+It shows that Layer 27 activations predict choice tendency. It does not show that Layer 27 causes the choice.
+
+**DAS sensitivity does not imply DAS necessity.**
+The result shows that the 16-dimensional subspace responds causally. It does not show that this subspace is the sole or necessary mediator of the model's decisions.
+
+**The model's decision algorithm is not identified.**
+Behaviour is equally consistent with Rescorla-Wagner and Recency models (ΔBIC = 0.05). The two cannot be distinguished from behavioural data alone.
+
+---
+
+## 5. Repository Structure
 
 ```
-experiment_7/
+Experiment_7/
 ├── README.md
 ├── requirements.txt
 │
 ├── src/
-│   ├── exp7_neuro.py         # linear probing (7B) and behaviour models (7A)
-│   ├── exp7h_das.py          # DAS training (7H)
-│   └── exp7d_dynamics.py     # activation perturbation dynamics (7D)
+│   ├── exp7_neuro.py         # linear probing and behaviour models
+│   ├── exp7h_das.py          # DAS training
+│   └── exp7d_dynamics.py     # activation perturbation dynamics
 │
 ├── validation/
 │   ├── FINAL_PROTOCOL.md     # pre-registered protocol (frozen before V2 run)
@@ -198,17 +266,17 @@ experiment_7/
 │
 ├── results/
 │   ├── probing/
-│   │   ├── probe_summary.json        # best layer and r per variable ← key result
+│   │   ├── probe_summary.json        # best layer and r per variable
 │   │   └── probe_results.json        # full 29-layer profile
 │   ├── das/
-│   │   ├── R_choice_tendency_L27_k16.npy  # frozen DAS subspace (64 KB)
+│   │   ├── R_choice_tendency_L27_k16.npy  # frozen DAS subspace
 │   │   └── das_results.json               # training metrics
 │   └── validation/
-│       ├── VALIDATION_RESULTS.md     # V2 results summary ← key result
+│       ├── VALIDATION_RESULTS.md     # V2 results summary
 │       └── summary.json              # machine-readable V2 metrics
 │
 ├── tests/
-│   └── test_das_split_integrity.py   # 25 automated tests (all pass)
+│   └── test_das_split_integrity.py   # 25 automated tests
 │
 └── docs/
     ├── SCIENTIFIC_SIGNOFF.md
@@ -218,66 +286,65 @@ experiment_7/
 
 ---
 
-## How to Run
+## 6. How to Run
 
-### Requirements
+### Setup
 
 ```bash
 pip install -r requirements.txt
-# Key packages: torch, numpy, transformers, tqdm
 ```
 
-### Verify saved results (no model needed)
+### Verify saved results (no model required)
 
 ```bash
 python -m pytest tests/test_das_split_integrity.py -v
-# 25/25 tests should pass
 ```
 
-### Re-run linear probing from saved activations (no model needed)
+25 tests verify split integrity, R matrix orthonormality, and V2 result ranges. These run without activation files or the live model.
 
-Requires `data/exp6_activations/acts_choice.npy` (not included — ~180 MB per file).
+### Re-run linear probing from saved activations (no model required)
+
+Requires activation files (~180 MB each, not included in this repository).
 
 ```bash
 python src/exp7_neuro.py probe_7b
 ```
 
-### Re-run DAS training from saved activations (no model needed)
+### Re-run DAS training from saved activations (no model required)
 
 ```bash
 python src/exp7h_das.py train --only_vars choice_tendency --only_layers 27 --only_k 16
 ```
 
-### Re-run V2 confirmatory experiment (requires Qwen3-0.6B + Apple MPS)
+### Re-run the V2 confirmatory experiment (requires Qwen3-0.6B)
 
 ```bash
-# Step 1: development test
+# Preflight check
 python validation/scripts/confirm_v2.py --mode preflight
 
-# Step 2: full confirmatory run (~14 minutes on Apple MPS)
+# Full confirmatory run (~14 minutes on Apple MPS)
 python validation/scripts/confirm_v2.py --mode final
 ```
 
-The confirmatory run will refuse to overwrite the existing `validation/results/confirmatory_run/` directory. The existing directory contains the original pre-registered results.
+The confirmatory script will refuse to overwrite the existing results directory. The existing directory contains the original pre-registered results.
 
 ---
 
-## Reproducibility at a Glance
+## 7. Reproducibility
 
-| Component | Needs model? | Included? |
-|-----------|-------------|-----------|
-| Read and verify probe_summary.json | No | ✅ |
-| Read and verify V2 summary.json | No | ✅ |
-| Run the 25 automated tests | No | ✅ |
-| Re-run linear probing (7B) | No | Needs activation files (not included) |
-| Re-run DAS training (7H) | No | Needs activation files (not included) |
-| Re-run V2 confirmatory | Yes (Qwen3-0.6B) | Needs model + ~14 min on MPS |
+| Component | Model required | Activation files required | Included |
+|-----------|---------------|--------------------------|---------|
+| Verify probe_summary.json | No | No | Yes |
+| Verify V2 summary.json | No | No | Yes |
+| Run 25 automated tests | No | No | Yes |
+| Re-run linear probing | No | Yes (~180 MB each) | No |
+| Re-run DAS training | No | Yes (~180 MB each) | No |
+| Re-run V2 confirmatory | Yes | No | Requires model |
 
-**Activation files** (`acts_choice.npy`, etc.) are ~180 MB each and are not included. The model must be downloaded from HuggingFace: `Qwen/Qwen3-0.6B`, revision `c1899de289a04d12100db370d81485cdf75e47ca`.
+**Activation files** (`acts_choice.npy`, etc.) are not included. The model must be downloaded from HuggingFace: `Qwen/Qwen3-0.6B`, revision `c1899de289a04d12100db370d81485cdf75e47ca`.
 
 ---
 
-## A Note on Metric Terminology
+## 8. Metric Terminology
 
-The metric called `iia_val` in `results/das/das_results.json` is **directional agreement (DA)** — the fraction of held-out pairs where the probe score shifted in the correct direction. It is not standard Interchange Intervention Accuracy (IIA) as defined in causal representation learning, which requires specifying a full high-level causal model. We use "directional agreement" throughout to avoid this confusion.
-
+The key `iia_val` in `results/das/das_results.json` measures **directional agreement (DA)**: the fraction of held-out pairs where the probe score shifted in the correct direction after the DAS intervention. This is not standard Interchange Intervention Accuracy (IIA) as defined in causal representation learning, which requires specifying a complete high-level causal model. The term directional agreement is used throughout to avoid this ambiguity.
