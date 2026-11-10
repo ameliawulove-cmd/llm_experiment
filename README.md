@@ -275,7 +275,21 @@ This supports a causal effect on the measured output quantity, not a claim of su
 
 ---
 
-## 4. How the Experiments Connect
+## 4. Selected Results
+
+**Layer-wise linear probe performance** (Experiment 7) — Pearson r between hidden activations and target variables across transformer layers.
+
+![Layer-wise probe performance](Experiment_7/figures/E7_01_probe_layerwise.png)
+
+**DAS V2 confirmatory result** (Experiment 7) — Mean absolute logit change and paired difference with 95% bootstrap CI, evaluated on 20 independent episodes.
+
+![DAS V2 primary result](Experiment_7/figures/E7_03_das_primary_result.png)
+
+For full figure sets see [Experiment 5 figures](Experiment_5/README.md#figures) and [Experiment 7 figures](Experiment_7/README.md#figures).
+
+---
+
+## 6. How the Experiments Connect
 
 The experiments investigate different stages of the decision-making problem.
 
@@ -295,7 +309,7 @@ A model may represent reward-related information without using it effectively to
 
 ---
 
-## 5. Repository Structure
+## 7. Repository Structure
 
 ```
 llm_experiment/
@@ -324,7 +338,7 @@ For implementation details, experiment configurations, evaluation procedures, an
 
 ---
 
-## 6. Scope and Limitations
+## 8. Scope and Limitations
 
 - All experiments investigate inference-time behaviour with frozen model weights.
 - Linear probing identifies decodable information, not necessarily information used causally in decision-making.

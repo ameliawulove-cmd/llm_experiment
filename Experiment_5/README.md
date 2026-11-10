@@ -31,6 +31,20 @@ Episode end: reflections = []
 
 ---
 
+## Results
+
+### Figures
+
+**Choice proportion over trials** — A-choice rate per trial position, averaged across episodes.
+
+![Choice proportion over trials](figures/E5_01_choice_by_trial.png)
+
+**Pre- and post-reversal performance** — Optimal choice accuracy before and after the reward reversal.
+
+![Pre- and post-reversal performance](figures/E5_02_reversal_performance.png)
+
+---
+
 ## Results — Qwen3-0.6B (Phase 1 complete)
 
 ### Qwen3-0.6B — 50 episodes × 30 trials

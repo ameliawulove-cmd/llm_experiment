@@ -118,6 +118,16 @@ Layer 27 (the final transformer block output) encodes the model's upcoming choic
 
 **Limitation:** Decodability does not establish that the model causally uses Layer 27 activations when selecting an action. This is a correlation result.
 
+### Figures
+
+**Layer-wise probe performance** — Pearson r by transformer layer for key target variables at the choice token position.
+
+![Layer-wise probe performance](figures/E7_01_probe_layerwise.png)
+
+**Best probe performance per target** — Highest r achieved across layers for each target variable.
+
+![Best probe performance per target variable](figures/E7_02_probe_summary.png)
+
 ---
 
 ## 3. Distributed Alignment Search (DAS)
@@ -224,6 +234,20 @@ Source: `results/validation/summary.json` and `results/validation/VALIDATION_RES
 The trained 16-dimensional subspace at Layer 27 produced significantly larger and more directionally consistent logit changes than norm-matched random subspaces, evaluated on entirely new episodes under a pre-registered protocol.
 
 **Limitation:** Zero out of 200 interventions changed which arm had the higher logit. The model carries a persistent A-token bias from pretraining that the intervention norm cannot overcome. This result supports a causal effect on the measured output quantity, not a claim of behavioural control.
+
+### Figures
+
+**V2 primary result** — Mean absolute logit change and paired difference (DAS − random) with 95% bootstrap CI.
+
+![DAS V2 primary result](figures/E7_03_das_primary_result.png)
+
+**Cluster-level effects** — Paired difference per cluster; all 10 clusters show DAS > random.
+
+![DAS cluster-level effects](figures/E7_04_das_cluster_effects.png)
+
+**Intervention distribution and outcomes** — Distribution of absolute logit change and intervention outcome rates.
+
+![DAS intervention distribution and outcomes](figures/E7_05_das_intervention_dist.png)
 
 ---
 
