@@ -123,10 +123,12 @@ Layer 27 (the final transformer block output) encodes the model's upcoming choic
 **Layer-wise probe performance** — Pearson r by transformer layer for key target variables at the choice token position.
 
 ![Layer-wise probe performance](figures/E7_01_probe_layerwise.png)
+*([SVG](figures/E7_01_probe_layerwise.svg))*
 
 **Best probe performance per target** — Highest r achieved across layers for each target variable.
 
 ![Best probe performance per target variable](figures/E7_02_probe_summary.png)
+*([SVG](figures/E7_02_probe_summary.svg))*
 
 ---
 
@@ -240,14 +242,17 @@ The trained 16-dimensional subspace at Layer 27 produced significantly larger an
 **V2 primary result** — Mean absolute logit change and paired difference (DAS − random) with 95% bootstrap CI.
 
 ![DAS V2 primary result](figures/E7_03_das_primary_result.png)
+*([SVG](figures/E7_03_das_primary_result.svg))*
 
 **Cluster-level effects** — Paired difference per cluster; all 10 clusters show DAS > random.
 
 ![DAS cluster-level effects](figures/E7_04_das_cluster_effects.png)
+*([SVG](figures/E7_04_das_cluster_effects.svg))*
 
 **Intervention distribution and outcomes** — Distribution of absolute logit change and intervention outcome rates.
 
 ![DAS intervention distribution and outcomes](figures/E7_05_das_intervention_dist.png)
+*([SVG](figures/E7_05_das_intervention_dist.svg))*
 
 ---
 

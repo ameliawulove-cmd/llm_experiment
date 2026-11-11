@@ -38,10 +38,12 @@ Episode end: reflections = []
 **Choice proportion over trials** — A-choice rate per trial position, averaged across episodes.
 
 ![Choice proportion over trials](figures/E5_01_choice_by_trial.png)
+*([SVG](figures/E5_01_choice_by_trial.svg))*
 
 **Pre- and post-reversal performance** — Optimal choice accuracy before and after the reward reversal.
 
 ![Pre- and post-reversal performance](figures/E5_02_reversal_performance.png)
+*([SVG](figures/E5_02_reversal_performance.svg))*
 
 ---
 

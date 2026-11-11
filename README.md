@@ -280,10 +280,12 @@ This supports a causal effect on the measured output quantity, not a claim of su
 **Layer-wise linear probe performance** (Experiment 7) — Pearson r between hidden activations and target variables across transformer layers.
 
 ![Layer-wise probe performance](Experiment_7/figures/E7_01_probe_layerwise.png)
+*([SVG](Experiment_7/figures/E7_01_probe_layerwise.svg))*
 
 **DAS V2 confirmatory result** (Experiment 7) — Mean absolute logit change and paired difference with 95% bootstrap CI, evaluated on 20 independent episodes.
 
 ![DAS V2 primary result](Experiment_7/figures/E7_03_das_primary_result.png)
+*([SVG](Experiment_7/figures/E7_03_das_primary_result.svg))*
 
 For full figure sets see [Experiment 5 figures](Experiment_5/README.md#figures) and [Experiment 7 figures](Experiment_7/README.md#figures).
 
